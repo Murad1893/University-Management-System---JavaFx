@@ -10,11 +10,11 @@
 
 <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="940.0" prefWidth="1288.0" style="-fx-background-color: #f1f2f8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.warningcontroller">
    <children>
-      <AnchorPane layoutX="27.0" layoutY="30.0" prefHeight="826.0" prefWidth="1254.0" style="-fx-background-color: white;">
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="912.0" prefWidth="1272.0" style="-fx-background-color: white;">
          <children>
-            <AnchorPane prefHeight="39.0" prefWidth="1254.0" style="-fx-background-color: #3f51b5;">
+            <AnchorPane prefHeight="41.0" prefWidth="1272.0" style="-fx-background-color: #3f51b5;">
                <children>
-                  <Label layoutX="6.0" layoutY="2.0" prefHeight="39.0" prefWidth="153.0" text="Warning Panel" textFill="WHITE">
+                  <Label layoutX="6.0" layoutY="2.0" prefHeight="39.0" prefWidth="153.0" text="WARNING PANEL" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>
@@ -22,8 +22,8 @@
                </children>
             </AnchorPane>
             <TextField fx:id="id" layoutX="16.0" layoutY="99.0" prefHeight="25.0" prefWidth="248.0" style="-fx-border-color: #3f51b5; -fx-border-radius: 10px; -fx-background-color: transparent;" />
-            <Button fx:id="btrw" layoutX="14.0" layoutY="150.0" mnemonicParsing="false" onAction="#removewarning" prefHeight="41.0" prefWidth="122.0" style="-fx-background-color: #008CBA; -fx-font-weight: bold;" text="Remove Warning" textFill="WHITE" />
-            <Button fx:id="btts" layoutX="285.0" layoutY="150.0" mnemonicParsing="false" onAction="#DeleteRecord" prefHeight="41.0" prefWidth="146.0" style="-fx-background-color: #f44336; -fx-font-weight: bold;" text="Terminate Student" textFill="WHITE" />
+            <Button fx:id="btrw" layoutX="14.0" layoutY="150.0" mnemonicParsing="false" onAction="#removewarning" prefHeight="41.0" prefWidth="122.0" style="-fx-background-color: #008CBA; -fx-font-weight: bold;" text="REMOVE" textFill="WHITE" />
+            <Button fx:id="btts" layoutX="285.0" layoutY="150.0" mnemonicParsing="false" onAction="#DeleteRecord" prefHeight="41.0" prefWidth="146.0" style="-fx-background-color: #f44336; -fx-font-weight: bold;" text="TERMINATE" textFill="WHITE" />
             <TableView fx:id="table" layoutX="463.0" layoutY="60.0" prefHeight="732.0" prefWidth="755.0">
               <columns>
                 <TableColumn fx:id="col_id" prefWidth="252.0" text="Student ID" />
@@ -31,7 +31,7 @@
                   <TableColumn fx:id="col_wc" minWidth="9.0" prefWidth="251.0" text="Warning Count" />
               </columns>
             </TableView>
-            <Button fx:id="btis" layoutX="157.0" layoutY="150.0" mnemonicParsing="false" onAction="#issuewarning" prefHeight="41.0" prefWidth="112.0" style="-fx-background-color: #008CBA; -fx-font-weight: bold;" text="Issue Warning" textFill="WHITE" />
+            <Button fx:id="btis" layoutX="157.0" layoutY="150.0" mnemonicParsing="false" onAction="#issuewarning" prefHeight="41.0" prefWidth="112.0" style="-fx-background-color: #008CBA; -fx-font-weight: bold;" text="ISSUE" textFill="WHITE" />
             <Label fx:id="idlabel" layoutX="19.0" layoutY="69.0" style="-fx-font-weight: bold;" text="Student ID">
                <font>
                   <Font size="16.0" />

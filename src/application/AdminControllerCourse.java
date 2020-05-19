@@ -301,19 +301,15 @@ public class AdminControllerCourse implements Initializable{
 			try {
 				ps2.execute();
 			} catch (SQLException e2) {
-				s = e2.getMessage();
-				System.out.println(s);
+				error.setContentText("Department does not exist!");
+				error.showAndWait();
 				return;
 			}
 		
 			s = e1.getMessage();
-			System.out.println(s);
+		
 			if(s.contains("Duplicate")) {
 				error.setContentText("Course with these entries already exists!");
-				error.showAndWait();
-			}
-			else if(s.contains("No value")) {
-				error.setContentText("Deparment does not exist!");
 				error.showAndWait();
 			}
 			else if(s.contains("prerequisite")) {
@@ -439,7 +435,7 @@ public class AdminControllerCourse implements Initializable{
 			// TODO Auto-generated catch block
 			ViewCourseRecord(e);
 			String s = e1.getMessage();
-			System.out.println(s);
+		
 			if(s.contains("prerequisite")) {
 				error.setContentText("Prerequisite course does not exist!");
 				error.showAndWait();

@@ -11,11 +11,11 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="pa" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1037.0" prefWidth="1499.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentSideBarController">
+<BorderPane fx:id="pa" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1037.0" prefWidth="1499.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentSideBarController">
    <left>
       <AnchorPane prefHeight="953.0" prefWidth="180.0" style="-fx-background-color: #2e3442;" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="sbtn1" alignment="CENTER" layoutY="363.0" mnemonicParsing="false" onAction="#ShowProfile" prefHeight="59.0" prefWidth="204.0" style="-fx-font-size: 14;" styleClass="btn2" stylesheets="@application.css" text="Profile" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="sbtn1" alignment="CENTER" layoutY="363.0" mnemonicParsing="false" onAction="#ShowProfile" prefHeight="59.0" prefWidth="204.0" style="-fx-font-size: 14;" styleClass="dashboardButton" text="Profile" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -23,7 +23,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="sbtn2" alignment="CENTER" layoutY="430.0" mnemonicParsing="false" onAction="#ShowCourse" prefHeight="59.0" prefWidth="202.0" style="-fx-font-size: 14;" styleClass="btn2" stylesheets="@application.css" text="Course Registration" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="sbtn2" alignment="CENTER" layoutY="430.0" mnemonicParsing="false" onAction="#ShowCourse" prefHeight="59.0" prefWidth="202.0" style="-fx-font-size: 14;" styleClass="dashboardButton" text="Course Registration" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -31,7 +31,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="sbtn3" alignment="CENTER" layoutY="499.0" mnemonicParsing="false" onAction="#ShowAnnouncement" prefHeight="59.0" prefWidth="203.0" style="-fx-font-size: 14;" styleClass="btn2" stylesheets="@application.css" text="Announcement" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="sbtn3" alignment="CENTER" layoutY="499.0" mnemonicParsing="false" onAction="#ShowAnnouncement" prefHeight="59.0" prefWidth="203.0" style="-fx-font-size: 14;" styleClass="dashboardButton" text="Announcement" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -39,7 +39,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="sbtn4" alignment="CENTER" layoutX="2.0" layoutY="570.0" mnemonicParsing="false" onAction="#ShowAssignment" prefHeight="59.0" prefWidth="201.0" style="-fx-font-size: 14;" styleClass="btn2" stylesheets="@application.css" text="Assignment" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="sbtn4" alignment="CENTER" layoutX="2.0" layoutY="570.0" mnemonicParsing="false" onAction="#ShowAssignment" prefHeight="59.0" prefWidth="201.0" style="-fx-font-size: 14;" styleClass="dashboardButton" text="Assignment" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -47,7 +47,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="sbtn5" alignment="CENTER" layoutX="1.0" layoutY="638.0" mnemonicParsing="false" onAction="#ShowAttendence" prefHeight="59.0" prefWidth="202.0" style="-fx-font-size: 14;" styleClass="btn2" stylesheets="@application.css" text="Attendence" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="sbtn5" alignment="CENTER" layoutX="1.0" layoutY="638.0" mnemonicParsing="false" onAction="#ShowAttendence" prefHeight="59.0" prefWidth="202.0" style="-fx-font-size: 14;" styleClass="dashboardButton" text="Attendence" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -55,7 +55,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="sbtn7" layoutY="853.0" mnemonicParsing="false" onAction="#StudentSignOut" prefHeight="59.0" prefWidth="203.0" styleClass="btn2" stylesheets="@application.css" text="Sign Out" textFill="WHITE">
+            <Button fx:id="sbtn7" layoutY="853.0" mnemonicParsing="false" onAction="#StudentSignOut" prefHeight="59.0" prefWidth="203.0" styleClass="dashboardButton" text="Sign Out" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -93,7 +93,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Button fx:id="sbtn6" alignment="CENTER" layoutX="3.0" layoutY="705.0" mnemonicParsing="false" onAction="#AddMarks" prefHeight="59.0" prefWidth="202.0" style="-fx-font-size: 14;" styleClass="btn2" stylesheets="@application.css" text="Semester Marks" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="sbtn6" alignment="CENTER" layoutX="3.0" layoutY="705.0" mnemonicParsing="false" onAction="#AddMarks" prefHeight="59.0" prefWidth="202.0" style="-fx-font-size: 14;" styleClass="dashboardButton" text="Semester Marks" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -103,7 +103,7 @@
             </Button>
             <FontAwesomeIconView fill="WHITE" glyphName="LINE_CHART" layoutX="12.0" layoutY="742.0" size="22" />
             <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR" layoutX="14.0" layoutY="672.0" size="22" />
-            <Button fx:id="sbtn8" alignment="CENTER" layoutX="6.0" layoutY="775.0" mnemonicParsing="false" onAction="#ShowResource" prefHeight="59.0" prefWidth="202.0" style="-fx-font-size: 14;" styleClass="btn2" stylesheets="@application.css" text="Resources" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="sbtn8" alignment="CENTER" layoutX="6.0" layoutY="775.0" mnemonicParsing="false" onAction="#ShowResource" prefHeight="59.0" prefWidth="202.0" style="-fx-font-size: 14;" styleClass="dashboardButton" text="Resources" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -136,6 +136,14 @@
                   <Image url="file:Student.png" />
                </image>
             </ImageView>
+            <Button layoutX="1447.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="52.0" styleClass="helpButton" text="Help">
+               <graphic>
+                  <FontAwesomeIconView glyphName="QUESTION" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
          </children>
       </AnchorPane>
    </top>

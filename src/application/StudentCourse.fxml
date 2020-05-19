@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="960.0" prefWidth="1306.0" style="-fx-background-color: #f1f2f8;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentCourseRegistrationController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="960.0" prefWidth="1306.0" style="-fx-background-color: #f1f2f8;" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentCourseRegistrationController">
    <children>
       <Label layoutX="36.0" layoutY="31.0" text="Course Registration">
          <font>
@@ -48,7 +48,7 @@
                         <TableView fx:id="table" prefHeight="1460.0" prefWidth="1238.0">
                           <columns>
                             <TableColumn fx:id="col_course" prefWidth="347.0" text="Course" />
-                              <TableColumn fx:id="col_chr" prefWidth="267.0" text="Credit Hr" />
+                              <TableColumn fx:id="col_chr" prefWidth="267.0" text="Credit Hour" />
                               <TableColumn fx:id="col_status" minWidth="0.0" prefWidth="282.0" text="Status" />
                               <TableColumn fx:id="action" minWidth="0.0" prefWidth="353.0" text="Action" />
                           </columns>

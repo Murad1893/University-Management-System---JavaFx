@@ -1,3 +1,7 @@
+.helpButton{
+	-fx-background-color: transparent;
+}
+
 #loginBackground{
 	-fx-background-color:  #1c2230;
 }
@@ -19,11 +23,13 @@
 }
 
 #signInButton:hover{
+	-fx-font-size: 16px;
 	-fx-font-weight:  bold;
 	-fx-background-color:  #f6b93b;
 }
 
 #signInButton:focused{
+	-fx-font-size: 16px;
 	-fx-font-weight:  bold;
 	-fx-background-color:  #f6b93b;
 }
@@ -52,11 +58,9 @@
 }
 
 .crudButton{
-	-fx-font-size: 15px;
-}
-
-.crudButton:hover{
-	-fx-font-weight: bold;
+	-fx-font-size: 12px;
+	-fx-border-radius: 0;
+	-fx-border-color:  #18202c;
 }
 
 .crudInsert{
@@ -98,8 +102,6 @@
     -fx-border-width:3px;
    
 }
- 
-
  
   .btn3
  {

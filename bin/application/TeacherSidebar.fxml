@@ -11,11 +11,11 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="pa" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1037.0" prefWidth="1499.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TeacherSidebarController">
+<BorderPane fx:id="pa" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1037.0" prefWidth="1499.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TeacherSidebarController">
    <left>
       <AnchorPane prefHeight="953.0" prefWidth="180.0" style="-fx-background-color: #2e3442;" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="tbtn1" layoutY="360.0" mnemonicParsing="false" onAction="#TeachShowProfile" prefHeight="59.0" prefWidth="204.0" style="-fx-font-size: 15;" styleClass="btn2" stylesheets="@application.css" text="Profile" textFill="WHITE">
+            <Button fx:id="tbtn1" layoutY="360.0" mnemonicParsing="false" onAction="#TeachShowProfile" prefHeight="59.0" prefWidth="204.0" style="-fx-font-size: 15;" styleClass="dashboardButton" stylesheets="@../application.css" text="Profile" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -23,7 +23,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="tbtn2" layoutY="427.0" mnemonicParsing="false" onAction="#TeachAddAttendence" prefHeight="59.0" prefWidth="202.0" style="-fx-font-size: 15;" styleClass="btn2" stylesheets="@application.css" text="Attendence" textFill="WHITE">
+            <Button fx:id="tbtn2" layoutY="427.0" mnemonicParsing="false" onAction="#TeachAddAttendence" prefHeight="59.0" prefWidth="202.0" style="-fx-font-size: 15;" styleClass="dashboardButton" stylesheets="@../application.css" text="Attendence" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -31,7 +31,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="tbtn3" layoutY="496.0" mnemonicParsing="false" onAction="#TeachGrading" prefHeight="59.0" prefWidth="203.0" style="-fx-font-size: 15;" styleClass="btn2" stylesheets="@application.css" text="Grading" textFill="WHITE">
+            <Button fx:id="tbtn3" layoutY="496.0" mnemonicParsing="false" onAction="#TeachGrading" prefHeight="59.0" prefWidth="203.0" style="-fx-font-size: 15;" styleClass="dashboardButton" stylesheets="@../application.css" text="Grading" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -39,7 +39,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="tbtn4" layoutX="2.0" layoutY="567.0" mnemonicParsing="false" onAction="#TeachAnnounce" prefHeight="59.0" prefWidth="201.0" style="-fx-font-size: 15;" styleClass="btn2" stylesheets="@application.css" text="Announcement" textFill="WHITE">
+            <Button fx:id="tbtn4" layoutX="2.0" layoutY="567.0" mnemonicParsing="false" onAction="#TeachAnnounce" prefHeight="59.0" prefWidth="201.0" style="-fx-font-size: 15;" styleClass="dashboardButton" stylesheets="@../application.css" text="Announcement" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -47,7 +47,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="tbtn7" layoutY="853.0" mnemonicParsing="false" onAction="#TeachSignOut" prefHeight="59.0" prefWidth="203.0" style="-fx-font-size: 15px;" styleClass="btn2" stylesheets="@application.css" text="Sign Out" textFill="WHITE">
+            <Button fx:id="tbtn7" layoutY="853.0" mnemonicParsing="false" onAction="#TeachSignOut" prefHeight="59.0" prefWidth="203.0" style="-fx-font-size: 15px;" styleClass="dashboardButton" stylesheets="@../application.css" text="Sign Out" textFill="WHITE">
                <font>
                   <Font size="10.0" />
                </font>
@@ -109,6 +109,14 @@
                   <Image url="file:Student.png" />
                </image>
             </ImageView>
+            <Button layoutX="1447.0" layoutY="2.0" mnemonicParsing="false" styleClass="helpButton" text="Help">
+               <graphic>
+                  <FontAwesomeIconView glyphName="QUESTION" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
          </children>
       </AnchorPane>
    </top>

@@ -2,6 +2,7 @@
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
@@ -16,13 +17,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="936.0" prefWidth="1280.0" style="-fx-background-color: #f1f2f8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FeeCreationController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="936.0" prefWidth="1280.0" style="-fx-background-color: #f1f2f8;" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FeeCreationController">
    <children>
       <Pane layoutX="36.0" layoutY="44.0" prefHeight="445.0" prefWidth="523.0" style="-fx-background-color: #e6e6e6;">
          <children>
           <AnchorPane layoutX="1.0" layoutY="2.0" minHeight="0.0" minWidth="0.0" prefHeight="440.0" prefWidth="522.0" style="-fx-border-radius: 0px; -fx-border-color: #18202c; -fx-background-color: white;">
                <children>
-                  <Text fx:id="studidlabel" fill="#042954" layoutX="38.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text="Student ID" wrappingWidth="160.0" />
+                  <Text fx:id="studidlabel" fill="#042954" layoutX="38.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Student ID" wrappingWidth="160.0" />
                   <TextField fx:id="studid" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="38.0" layoutY="126.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText=" Student ID" style="-fx-border-color: none; -fx-border-radius: none; -fx-border-bottom: 2px solid green; -fx-background-color: transparent;">
                      <opaqueInsets>
                         <Insets right="3.0" />
@@ -33,21 +34,27 @@
                         <Label layoutX="176.0" layoutY="5.0" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-font-family: Segoe UI Semibold; -fx-text-fill: white;" text="Data Panel" />
                         <Button fx:id="Refresh" layoutX="451.0" layoutY="6.0" mnemonicParsing="false" onAction="#RefreshRecord" prefHeight="49.0" prefWidth="57.0" styleClass="button1" stylesheets="@application.css">
                            <graphic>
-                              <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="30" />
+                              <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="30">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></FontAwesomeIconView>
                            </graphic>
                         </Button>
                      </children>
                   </AnchorPane>
                   <Line endX="106.0" layoutX="306.0" layoutY="153.0" startX="-268.0" stroke="#042954" />
-                  <Text fx:id="statuslabel" fill="#042954" layoutX="38.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text="Status" wrappingWidth="160.0" />
+                  <Text fx:id="statuslabel" fill="#042954" layoutX="38.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Status" wrappingWidth="160.0" />
                   <RadioButton fx:id="paid" layoutX="42.0" layoutY="207.0" mnemonicParsing="false" text="Paid" textFill="#002e62">
                      <toggleGroup>
                         <ToggleGroup fx:id="g1" />
                      </toggleGroup>
                   </RadioButton>
                   <RadioButton fx:id="unpaid" layoutX="42.0" layoutY="235.0" mnemonicParsing="false" text="Unpaid" textFill="#002e62" toggleGroup="$g1" />
-                  <DatePicker fx:id="duedate1" layoutX="38.0" layoutY="304.0" prefHeight="26.0" prefWidth="174.0" style="-fx-background-color: #3f51b5;" />
-                  <Text fx:id="duedatelabel1" fill="#042954" layoutX="38.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text="Due Date" wrappingWidth="160.0" />
+                  <DatePicker fx:id="duedate1" layoutX="38.0" layoutY="304.0" prefHeight="26.0" prefWidth="174.0" style="-fx-background-color: #3f51b5;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></DatePicker>
+                  <Text fx:id="duedatelabel1" fill="#042954" layoutX="38.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Due Date" wrappingWidth="160.0" />
                </children>
             </AnchorPane>
          </children>
@@ -68,16 +75,25 @@
          <font>
             <Font name="Yu Gothic UI Bold" size="12.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
       <Button fx:id="View" layoutX="895.0" layoutY="787.0" mnemonicParsing="false" onAction="#SearchStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #00838f; -fx-border-radius: 0; -fx-border-color: #18202c;" text="VIEW" textFill="WHITE">
          <font>
             <Font name="Yu Gothic UI Bold" size="12.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
       <Button fx:id="ViewAll" layoutX="1062.0" layoutY="787.0" mnemonicParsing="false" onAction="#ViewStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #00695c; -fx-border-radius: 0; -fx-border-color: #18202c;" text="VIEW ALL" textFill="WHITE">
          <font>
             <Font name="Yu Gothic UI Bold" size="12.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
       <AnchorPane layoutX="37.0" layoutY="503.0" minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="522.0" style="-fx-border-radius: 0px; -fx-border-color: #18202c; -fx-background-color: white;">
          <children>
@@ -86,17 +102,26 @@
                   <Label layoutX="101.0" layoutY="7.0" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-font-family: Segoe UI Semibold; -fx-text-fill: white;" text="Generate Fee Challen" />
                   <Button fx:id="Refresh1" layoutX="451.0" layoutY="6.0" mnemonicParsing="false" onAction="#RefreshRecord" prefHeight="49.0" prefWidth="57.0" styleClass="button1" stylesheets="@application.css">
                      <graphic>
-                        <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="30" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="30">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></FontAwesomeIconView>
                      </graphic>
                   </Button>
                </children>
             </AnchorPane>
-            <DatePicker fx:id="duedate" layoutX="22.0" layoutY="100.0" prefHeight="26.0" prefWidth="174.0" style="-fx-background-color: #3f51b5;" />
-            <Text fx:id="duedatelabel" fill="#042954" layoutX="22.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text="Due Date" wrappingWidth="160.0" />
+            <DatePicker fx:id="duedate" layoutX="22.0" layoutY="100.0" prefHeight="26.0" prefWidth="174.0" style="-fx-background-color: #3f51b5;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></DatePicker>
+            <Text fx:id="duedatelabel" fill="#042954" layoutX="22.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Due Date" wrappingWidth="160.0" />
             <Button fx:id="generate" layoutX="367.0" layoutY="93.0" mnemonicParsing="false" onAction="#generatefee" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #327c14; -fx-border-radius: 0; -fx-border-color: #18202c;" text="Generate" textFill="WHITE">
                <font>
                   <Font name="Yu Gothic UI Bold" size="12.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
          </children>
       </AnchorPane>

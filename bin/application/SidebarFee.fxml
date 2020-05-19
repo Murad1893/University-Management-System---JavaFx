@@ -11,25 +11,25 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1037.0" prefWidth="1499.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SidebarControllerFinance">
+<BorderPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1037.0" prefWidth="1499.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SidebarControllerFinance">
    <left>
       <AnchorPane prefHeight="953.0" prefWidth="180.0" style="-fx-background-color: #2e3442;" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="btn1" layoutX="-1.0" layoutY="337.0" mnemonicParsing="false" onAction="#StudentAdd" prefHeight="59.0" prefWidth="204.0" style="-fx-font-size: 15px;" styleClass="btn2" stylesheets="@application.css" text="Fees Structure" textFill="WHITE">
+            <Button fx:id="btn1" layoutX="-1.0" layoutY="337.0" mnemonicParsing="false" onAction="#StudentAdd" prefHeight="59.0" prefWidth="204.0" style="-fx-font-size: 15px;" styleClass="dashboardButton" text="Fees Structure" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button fx:id="btn2" layoutX="-1.0" layoutY="404.0" mnemonicParsing="false" onAction="#CourseAdd" prefHeight="59.0" prefWidth="202.0" style="-fx-font-size: 15px;" styleClass="btn2" stylesheets="@application.css" text="Fees Allocation" textFill="WHITE">
+            <Button fx:id="btn2" layoutX="-1.0" layoutY="404.0" mnemonicParsing="false" onAction="#CourseAdd" prefHeight="59.0" prefWidth="202.0" style="-fx-font-size: 15px;" styleClass="dashboardButton" text="Fees Allocation" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button fx:id="btn6" layoutY="825.0" mnemonicParsing="false" onAction="#AdminSignOut" prefHeight="59.0" prefWidth="203.0" styleClass="btn2" stylesheets="@application.css" text="Sign Out" textFill="WHITE">
+            <Button fx:id="btn6" layoutY="825.0" mnemonicParsing="false" onAction="#AdminSignOut" prefHeight="59.0" prefWidth="203.0" styleClass="dashboardButton" text="Sign Out" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -83,6 +83,14 @@
                   <Image url="file:admin.png" />
                </image>
             </ImageView>
+            <Button layoutX="1447.0" layoutY="2.0" mnemonicParsing="false" styleClass="helpButton" text="Help">
+               <graphic>
+                  <FontAwesomeIconView glyphName="QUESTION" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
          </children>
       </AnchorPane>
    </top>

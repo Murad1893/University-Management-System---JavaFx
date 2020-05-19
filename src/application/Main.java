@@ -19,9 +19,10 @@ public class Main extends Application {
 			    		
 				try {
 					Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
-		    		Scene scene = new Scene(root);
+		    		Scene scene = new Scene(root, 790, 475);
 		    		primaryStage.setTitle("University Management System");
 		    		primaryStage.setScene(scene);
+		    		primaryStage.setResizable(false);
 		    		primaryStage.getIcons().add(new Image("file:42496-school-icon.png"));
 		    		primaryStage.show();
 		    		new FadeIn(root).play();

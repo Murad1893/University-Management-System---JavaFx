@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="960.0" prefWidth="1306.0" style="-fx-background-color: #f2f3f8;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AttendanceController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="960.0" prefWidth="1306.0" style="-fx-background-color: #f2f3f8;" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AttendanceController">
    <children>
       <AnchorPane layoutX="24.0" layoutY="38.0" prefHeight="885.0" prefWidth="1257.0" style="-fx-background-color: WHITE; -fx-border-color: #3f51b5;">
          <children>
@@ -58,7 +58,7 @@
                         </Button>
                      </children>
                   </HBox>
-                  <Label layoutX="14.0" layoutY="10.0" text="Attendence" textFill="WHITE">
+                  <Label layoutX="14.0" layoutY="10.0" text="ATTENDANCE" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="17.0" />
                      </font>
@@ -70,7 +70,10 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <DatePicker fx:id="date" layoutX="511.0" layoutY="64.0" prefHeight="26.0" prefWidth="174.0" style="-fx-background-color: #3f51b5;" />
+            <DatePicker fx:id="date" layoutX="511.0" layoutY="64.0" prefHeight="26.0" prefWidth="174.0" style="-fx-background-color: #3f51b5;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></DatePicker>
             <AnchorPane layoutX="9.0" layoutY="168.0" prefHeight="712.0" prefWidth="1240.0">
                <children>
                   <ScrollPane prefHeight="712.0" prefWidth="1240.0" style="-fx-background-color: white;">
@@ -94,7 +97,10 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <ComboBox fx:id="Course" layoutX="341.0" layoutY="65.0" onAction="#getCourse" prefHeight="26.0" prefWidth="150.0" promptText="Course" />
+            <ComboBox fx:id="Course" layoutX="341.0" layoutY="65.0" onAction="#getCourse" prefHeight="26.0" prefWidth="150.0" promptText="Course">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
             <Button fx:id="Update" layoutX="826.0" layoutY="64.0" mnemonicParsing="false" onAction="#UpdateAttendance" prefHeight="26.0" prefWidth="80.0" styleClass="btn3" text="Update" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />

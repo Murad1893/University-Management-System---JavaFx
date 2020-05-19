@@ -54,7 +54,7 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <TextArea fx:id="ta" editable="false" layoutX="13.0" layoutY="109.0" prefHeight="210.0" prefWidth="540.0" style="-fx-border-color: #3f51b5; -fx-border-radius: 5px; -fx-background-color: transparent;" />
+            <TextArea fx:id="ta" editable="false" layoutX="13.0" layoutY="109.0" prefHeight="210.0" prefWidth="540.0" style="-fx-border-color: #3f51b5; -fx-background-color: transparent;" />
             <Button fx:id="download" layoutX="14.0" layoutY="329.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="112.0" style="-fx-background-color: #3f51b5;" text="Download Files" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -79,14 +79,38 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Button fx:id="b8" layoutX="1165.0" mnemonicParsing="false" onAction="#returnSection8" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE" />
-            <Button fx:id="b7" layoutX="1070.0" mnemonicParsing="false" onAction="#returnSection7" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE" />
-            <Button fx:id="b6" layoutX="975.0" mnemonicParsing="false" onAction="#returnSection6" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE" />
-            <Button fx:id="b5" layoutX="880.0" mnemonicParsing="false" onAction="#returnSection5" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE" />
-            <Button fx:id="b4" layoutX="785.0" mnemonicParsing="false" onAction="#returnSection4" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE" />
-            <Button fx:id="b3" layoutX="690.0" mnemonicParsing="false" onAction="#returnSection3" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE" />
-            <Button fx:id="b2" layoutX="595.0" mnemonicParsing="false" onAction="#returnSection2" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE" />
-            <Button fx:id="b1" layoutX="500.0" mnemonicParsing="false" onAction="#returnSection1" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE" />
+            <Button fx:id="b8" layoutX="1165.0" mnemonicParsing="false" onAction="#returnSection8" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="b7" layoutX="1070.0" mnemonicParsing="false" onAction="#returnSection7" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="b6" layoutX="975.0" mnemonicParsing="false" onAction="#returnSection6" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="b5" layoutX="880.0" mnemonicParsing="false" onAction="#returnSection5" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="b4" layoutX="785.0" mnemonicParsing="false" onAction="#returnSection4" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="b3" layoutX="690.0" mnemonicParsing="false" onAction="#returnSection3" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="b2" layoutX="595.0" mnemonicParsing="false" onAction="#returnSection2" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="b1" layoutX="500.0" mnemonicParsing="false" onAction="#returnSection1" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
          </children>
       </AnchorPane>
    </children>

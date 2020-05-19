@@ -23,6 +23,11 @@
 	-fx-background-color:  #f6b93b;
 }
 
+#signInButton:focused{
+	-fx-font-weight:  bold;
+	-fx-background-color:  #f6b93b;
+}
+
 .dashboardButton{
 	-fx-font-size: 15px;
 	-fx-background-color: transparent;

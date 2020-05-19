@@ -30,7 +30,7 @@
       <Label fx:id="Passwordlabel" layoutX="515.0" layoutY="256.0" prefHeight="17.0" prefWidth="74.0" styleClass="loginLabel" text="Password" textFill="WHITE" />
       <TextField fx:id="Username" layoutX="492.0" layoutY="212.0" prefHeight="25.0" prefWidth="225.0" promptText="Username" styleClass="loginField" />
       <PasswordField fx:id="Password" layoutX="495.0" layoutY="281.0" prefHeight="25.0" prefWidth="225.0" promptText="Password" styleClass="loginField" />
-      <Button id="signInButton" fx:id="SigIn" layoutX="525.0" layoutY="354.0" mnemonicParsing="false" onAction="#SignInButton" onKeyPressed="#SignInButton" prefHeight="52.0" prefWidth="160.0" text="Sign In" textAlignment="CENTER" textFill="WHITE">
+      <Button id="signInButton" fx:id="SigIn" layoutX="525.0" layoutY="354.0" mnemonicParsing="false" onAction="#SignInButton" prefHeight="52.0" prefWidth="160.0" text="Sign In" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>

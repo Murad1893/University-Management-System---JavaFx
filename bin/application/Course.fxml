@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="940.0" prefWidth="1288.0" style="-fx-background-color: #f1f2f8;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminControllerCourse">
+   <children>
+      <AnchorPane layoutX="26.0" layoutY="21.0" prefHeight="906.0" prefWidth="1274.0" style="-fx-background-color: white;">
+         <children>
+            <Pane layoutY="72.0" prefHeight="804.0" prefWidth="523.0" style="-fx-background-color: #e6e6e6;">
+               <children>
+                <AnchorPane layoutX="1.0" minHeight="0.0" minWidth="0.0" prefHeight="804.0" prefWidth="522.0" style="-fx-border-radius: 0px; -fx-border-color: #3f51b5; -fx-background-color: white;">
+                     <children>
+                        <Text fx:id="idlabel" fill="#002e62" layoutX="38.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Course ID" wrappingWidth="118.98307228088379" />
+                        <TextField fx:id="id" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="38.0" layoutY="126.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="Course ID" style="-fx-border-color: none; -fx-border-radius: none; -fx-background-color: transparent;">
+                           <opaqueInsets>
+                              <Insets right="3.0" />
+                           </opaqueInsets>
+                        </TextField>
+                        <Text fx:id="cnamelabel" fill="#002e62" layoutX="38.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Course Name" wrappingWidth="140.0" />
+                        <TextField fx:id="cname" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="38.0" layoutY="189.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="Course Name" style="-fx-border-color: none; -fx-border-radius: none; -fx-border-bottom: none; -fx-background-color: none;">
+                           <opaqueInsets>
+                              <Insets right="3.0" />
+                           </opaqueInsets>
+                        </TextField>
+                        <Text fx:id="dcodelabel" fill="#002e62" layoutX="36.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Offering Department" wrappingWidth="184.9830722808838" />
+                        <TextField fx:id="dcode" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="36.0" layoutY="424.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="DeptCode" style="-fx-border-color: none; -fx-border-radius: none; -fx-border-bottom: none; -fx-background-color: transparent;">
+                           <opaqueInsets>
+                              <Insets right="3.0" />
+                           </opaqueInsets>
+                        </TextField>
+                        <Text fill="#002e62" layoutX="36.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Prerequisite 1 (IF ANY)" wrappingWidth="184.9830722808838" />
+                        <TextField fx:id="ccode1" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="32.0" layoutY="498.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="Course Code" style="-fx-border-color: none; -fx-border-radius: none; -fx-border-bottom: none; -fx-background-color: transparent;">
+                           <opaqueInsets>
+                              <Insets right="3.0" />
+                           </opaqueInsets>
+                        </TextField>
+                        <Text fill="#002e62" layoutX="36.0" layoutY="559.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Prerequisite 2 (IF ANY)" wrappingWidth="184.9830722808838" />
+                        <TextField fx:id="ccode2" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="32.0" layoutY="571.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="Course Code" style="-fx-border-color: none; -fx-border-radius: none; -fx-border-bottom: none; -fx-background-color: transparent;">
+                           <opaqueInsets>
+                              <Insets right="3.0" />
+                           </opaqueInsets>
+                        </TextField>
+                        <Text fill="#002e62" layoutX="36.0" layoutY="636.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Prerequisite 3 (IF ANY)" wrappingWidth="184.9830722808838" />
+                        <TextField fx:id="ccode3" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="32.0" layoutY="648.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="Course Code" style="-fx-border-color: none; -fx-border-radius: none; -fx-border-bottom: none; -fx-background-color: transparent;">
+                           <opaqueInsets>
+                              <Insets right="3.0" />
+                           </opaqueInsets>
+                        </TextField>
+                        <Text fill="#002e62" layoutX="36.0" layoutY="708.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Prerequisite 4 (IF ANY)" wrappingWidth="184.9830722808838" />
+                        <TextField fx:id="ccode4" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="34.0" layoutY="728.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="Course Code" style="-fx-border-color: none; -fx-border-radius: none; -fx-border-bottom: none; -fx-background-color: transparent;">
+                           <opaqueInsets>
+                              <Insets right="3.0" />
+                           </opaqueInsets>
+                        </TextField>
+                        <RadioButton fx:id="cr1" layoutX="48.0" layoutY="270.0" mnemonicParsing="false" text="1" textFill="#002e62">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="credithour" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="cr2" layoutX="48.0" layoutY="300.0" mnemonicParsing="false" text="2" textFill="#002e62" toggleGroup="$credithour">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="cr3" layoutX="48.0" layoutY="333.0" mnemonicParsing="false" text="3" textFill="#002e62" toggleGroup="$credithour">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="cr4" layoutX="48.0" layoutY="364.0" mnemonicParsing="false" text="4" textFill="#002e62" toggleGroup="$credithour">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </RadioButton>
+                        <Label layoutX="85.0" layoutY="270.0" text="Credit Hr" textFill="#002e62">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="86.0" layoutY="333.0" text="Credit Hr" textFill="#002e62">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="85.0" layoutY="365.0" text="Credit Hr" textFill="#002e62">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Text fx:id="crlabel" fill="#002e62" layoutX="41.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Choose Credit Hours" wrappingWidth="200.0" />
+                        <Line endX="201.0" endY="-0.1865234375" layoutX="214.0" layoutY="153.0" startX="-171.0" startY="-0.1865234375" stroke="#002e62" />
+                        <Line endX="201.0" endY="-0.1865234375" layoutX="213.0" layoutY="219.0" startX="-171.0" startY="-0.1865234375" stroke="#002e62" />
+                        <Line endX="201.0" endY="-0.1865234375" layoutX="204.0" layoutY="453.0" startX="-171.0" startY="-0.1865234375" stroke="#002e62" />
+                        <Line endX="201.0" endY="-0.1865234375" layoutX="204.0" layoutY="524.0" startX="-171.0" startY="-0.1865234375" stroke="#002e62" />
+                        <Line endX="201.0" endY="-0.1865234375" layoutX="206.0" layoutY="602.0" startX="-171.0" startY="-0.1865234375" stroke="#002e62" />
+                        <Line endX="201.0" endY="-0.1865234375" layoutX="204.0" layoutY="682.0" startX="-171.0" startY="-0.1865234375" stroke="#002e62" />
+                        <Line endX="201.0" endY="-0.1865234375" layoutX="204.0" layoutY="754.0" startX="-171.0" startY="-0.1865234375" stroke="#002e62" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="87.0" layoutY="300.0" text="Credit Hr" textFill="#002e62">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ScrollPane layoutX="550.0" layoutY="72.0" prefHeight="643.0" prefWidth="706.0" style="-fx-border-color: #3f51b5;">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="694.0" prefWidth="955.0">
+                     <children>
+                        <TableView fx:id="table" layoutX="-1.0" prefHeight="750.0" prefWidth="940.0" style="-fx-border-color: none;">
+                          <columns>
+                            <TableColumn fx:id="col_id" prefWidth="85.0" style="-fx-background-color: transparent;" text="Course ID" />
+                            <TableColumn fx:id="col_cname" prefWidth="89.0" style="-fx-background-color: transparent;" text="Course Name" />
+                              <TableColumn fx:id="col_cr" prefWidth="90.0" style="-fx-background-color: transparent;" text="Cr Hours" />
+                              <TableColumn fx:id="col_dcode" prefWidth="92.0" style="-fx-background-color: transparent;" text="Offer_Dept" />
+                              <TableColumn fx:id="col_ccode1" prefWidth="81.0" style="-fx-backgound-color: #042954;" text="Prereq 1" />
+                              <TableColumn fx:id="col_ccode2" prefWidth="83.0" text="Pereq 2" />
+                              <TableColumn fx:id="col_ccode3" prefWidth="75.0" text="Prereq 3" />
+                              <TableColumn fx:id="col_ccode4" prefWidth="95.0" text="Prereq 4" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Button fx:id="Insert" layoutX="595.0" layoutY="761.0" mnemonicParsing="false" onAction="#InsertCourseRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #3f9ce5; -fx-border-radius: 0; -fx-border-color: #18202c;" text="INSERT" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic UI Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="UpdDel" layoutX="712.0" layoutY="761.0" mnemonicParsing="false" onAction="#UpdateCourseRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #2e7d32; -fx-border-radius: 0; -fx-border-color: #18202c;" text="UPDATE" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic UI Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Delete" layoutX="820.0" layoutY="761.0" mnemonicParsing="false" onAction="#DeleteCourseRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #d50000; -fx-border-radius: 0; -fx-border-color: #18202c;" text="DELETE" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic UI Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="View" layoutX="931.0" layoutY="761.0" mnemonicParsing="false" onAction="#SearchCourseRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #00838f; -fx-border-radius: 0; -fx-border-color: #18202c;" text="VIEW" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic UI Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="ViewAll" layoutX="1045.0" layoutY="761.0" mnemonicParsing="false" onAction="#ViewCourseRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #00695c; -fx-border-radius: 0; -fx-border-color: #18202c;" text="VIEW ALL" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic UI Bold" size="12.0" />
+               </font>
+            </Button>
+            <AnchorPane prefHeight="45.0" prefWidth="1274.0" style="-fx-background-color: #3f51b5;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" style="-fx-font-weight: bold;" text="Course Registration" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="65.0" prefHeight="59.0" prefWidth="523.0" style="-fx-background-color: #3f51b5;">
+               <children>
+                  <Label layoutX="152.0" layoutY="14.0" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-font-family: Segoe UI Semibold; -fx-text-fill: white;" text="Data Panel" />
+                  <Button layoutX="451.0" layoutY="5.0" mnemonicParsing="false" onAction="#RefreshRecord" prefHeight="49.0" prefWidth="57.0" styleClass="button1" stylesheets="@application.css">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="30" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

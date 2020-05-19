@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="960.0" prefWidth="1306.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewannouncementcontroller">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="38.0" prefHeight="906.0" prefWidth="1262.0" style="-fx-background-color: white; -fx-border-color: #3f51b5;">
+         <children>
+            <AnchorPane layoutX="1.0" layoutY="75.0" prefHeight="41.0" prefWidth="1264.0" style="-fx-background-color: #3f51b5;">
+               <children>
+                  <Label layoutX="20.0" layoutY="11.0" prefHeight="17.0" prefWidth="129.0" text="Courses" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="b8" layoutX="1170.0" mnemonicParsing="false" onAction="#returnSection8" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE" />
+                  <Button fx:id="b7" layoutX="1070.0" mnemonicParsing="false" onAction="#returnSection7" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE" />
+                  <Button fx:id="b6" layoutX="975.0" mnemonicParsing="false" onAction="#returnSection6" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE" />
+                  <Button fx:id="b5" layoutX="880.0" mnemonicParsing="false" onAction="#returnSection5" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE" />
+                  <Button fx:id="b4" layoutX="785.0" mnemonicParsing="false" onAction="#returnSection4" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE" />
+                  <Button fx:id="b3" layoutX="690.0" mnemonicParsing="false" onAction="#returnSection3" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE" />
+                  <Button fx:id="b2" layoutX="595.0" mnemonicParsing="false" onAction="#returnSection2" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE" />
+                  <Button fx:id="b1" layoutX="500.0" mnemonicParsing="false" onAction="#returnSection1" prefHeight="41.0" prefWidth="95.0" style="-fx-font-weight: bold; -fx-background-color: transparent;" text="Button" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="12.0" layoutY="130.0" prefHeight="348.0" prefWidth="1206.0" style="-fx-background-color: white;">
+               <children>
+                  <ScrollPane layoutY="69.0" prefHeight="685.0" prefWidth="1238.0" style="-fx-background-color: white;">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1141.0" prefWidth="1216.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label fx:id="announceheading1" layoutX="30.0" layoutY="24.0" style="-fx-font-weight: bold;" text="OOAD Submission">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="announcedate1" layoutX="30.0" layoutY="49.0" prefHeight="17.0" prefWidth="78.0" text="17/11/2019" />
+                              <TextArea fx:id="announcetext1" editable="false" layoutX="30.0" layoutY="75.0" prefHeight="51.0" prefWidth="1130.0" style="-fx-background-color: transparent;" text="The Submission of OOAD assignment is due on 13 october 2019 by 11 pm no late submission will be entertained">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextArea>
+                              <Label fx:id="announceheading2" layoutX="30.0" layoutY="141.0" style="-fx-font-weight: bold;" text="OOAD Submission">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="announcedate2" layoutX="30.0" layoutY="166.0" prefHeight="17.0" prefWidth="78.0" text="17/11/2019" />
+                              <TextArea fx:id="announcetext2" editable="false" layoutX="30.0" layoutY="192.0" prefHeight="51.0" prefWidth="1130.0" style="-fx-background-color: transparent;" text="The Submission of OOAD assignment is due on 13 october 2019 by 11 pm no late submission will be entertained">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextArea>
+                              <Label fx:id="announceheading3" layoutX="30.0" layoutY="243.0" style="-fx-font-weight: bold;" text="OOAD Submission">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="announcedate3" layoutX="30.0" layoutY="268.0" prefHeight="17.0" prefWidth="78.0" text="17/11/2019" />
+                              <TextArea fx:id="announcetext3" editable="false" layoutX="30.0" layoutY="294.0" prefHeight="51.0" prefWidth="1130.0" style="-fx-background-color: transparent;" text="The Submission of OOAD assignment is due on 13 october 2019 by 11 pm no late submission will be entertained">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextArea>
+                              <Label fx:id="announceheading4" layoutX="30.0" layoutY="345.0" style="-fx-font-weight: bold;" text="OOAD Submission">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="announcedate4" layoutX="30.0" layoutY="370.0" prefHeight="17.0" prefWidth="78.0" text="17/11/2019" />
+                              <TextArea fx:id="announcetext4" editable="false" layoutX="30.0" layoutY="396.0" prefHeight="51.0" prefWidth="1130.0" style="-fx-background-color: transparent;" text="The Submission of OOAD assignment is due on 13 october 2019 by 11 pm no late submission will be entertained">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextArea>
+                              <Label fx:id="announceheading5" layoutX="30.0" layoutY="447.0" style="-fx-font-weight: bold;" text="OOAD Submission">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="announcedate5" layoutX="30.0" layoutY="472.0" prefHeight="17.0" prefWidth="78.0" text="17/11/2019" />
+                              <TextArea fx:id="announcetext5" editable="false" layoutX="30.0" layoutY="498.0" prefHeight="51.0" prefWidth="1130.0" style="-fx-background-color: transparent;" text="The Submission of OOAD assignment is due on 13 october 2019 by 11 pm no late submission will be entertained">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextArea>
+                              <Label fx:id="announceheading6" layoutX="30.0" layoutY="549.0" style="-fx-font-weight: bold;" text="OOAD Submission">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="announcedate6" layoutX="30.0" layoutY="574.0" prefHeight="17.0" prefWidth="78.0" text="17/11/2019" />
+                              <TextArea fx:id="announcetext6" editable="false" layoutX="30.0" layoutY="600.0" prefHeight="51.0" prefWidth="1130.0" style="-fx-background-color: transparent;" text="The Submission of OOAD assignment is due on 13 october 2019 by 11 pm no late submission will be entertained">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextArea>
+                              <Label fx:id="announceheading7" layoutX="30.0" layoutY="651.0" style="-fx-font-weight: bold;" text="OOAD Submission">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="announcedate7" layoutX="30.0" layoutY="676.0" prefHeight="17.0" prefWidth="78.0" text="17/11/2019" />
+                              <TextArea fx:id="announcetext7" editable="false" layoutX="30.0" layoutY="702.0" prefHeight="51.0" prefWidth="1130.0" style="-fx-background-color: transparent;" text="The Submission of OOAD assignment is due on 13 october 2019 by 11 pm no late submission will be entertained">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextArea>
+                              <Label fx:id="announceheading8" layoutX="30.0" layoutY="758.0" style="-fx-font-weight: bold;" text="OOAD Submission">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="announcedate8" layoutX="30.0" layoutY="783.0" prefHeight="17.0" prefWidth="78.0" text="17/11/2019" />
+                              <TextArea fx:id="announcetext8" editable="false" layoutX="30.0" layoutY="809.0" prefHeight="51.0" prefWidth="1130.0" style="-fx-background-color: transparent;" text="The Submission of OOAD assignment is due on 13 october 2019 by 11 pm no late submission will be entertained">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextArea>
+                              <Label fx:id="announceheading9" layoutX="30.0" layoutY="875.0" style="-fx-font-weight: bold;" text="OOAD Submission">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="announcedate9" layoutX="30.0" layoutY="900.0" prefHeight="17.0" prefWidth="78.0" text="17/11/2019" />
+                              <TextArea fx:id="announcetext9" editable="false" layoutX="30.0" layoutY="926.0" prefHeight="51.0" prefWidth="1130.0" style="-fx-background-color: transparent;" text="The Submission of OOAD assignment is due on 13 october 2019 by 11 pm no late submission will be entertained">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextArea>
+                              <Label fx:id="announceheading10" layoutX="30.0" layoutY="977.0" style="-fx-font-weight: bold;" text="OOAD Submission">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="announcedate10" layoutX="30.0" layoutY="1002.0" prefHeight="17.0" prefWidth="78.0" text="17/11/2019" />
+                              <TextArea fx:id="announcetext10" editable="false" layoutX="30.0" layoutY="1028.0" prefHeight="51.0" prefWidth="1130.0" style="-fx-background-color: transparent;" text="The Submission of OOAD assignment is due on 13 october 2019 by 11 pm no late submission will be entertained">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextArea>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+                  <Label layoutX="25.0" layoutY="41.0" style="-fx-font-weight: bold;" text="Recent Announcements" textFill="#002e62">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="2.0" prefHeight="32.0" prefWidth="1264.0" style="-fx-background-color: #3f51b5;">
+               <children>
+                  <Label layoutX="22.0" layoutY="6.0" prefHeight="17.0" prefWidth="129.0" text="Announcement" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

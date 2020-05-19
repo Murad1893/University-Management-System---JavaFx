@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="433.0" prefWidth="1206.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UpdateAnnounceController">
+   <children>
+      <Label layoutX="48.0" layoutY="45.0" text="Enter Course" textFill="#002e62">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="112.0" text="Announcement" textFill="#002e62">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="announcement" layoutX="47.0" layoutY="149.0" prefHeight="175.0" prefWidth="1100.0" promptText="Enter Announcement" style="-fx-background-color: #002e62; -fx-border-radius: 10px;" />
+      <Button fx:id="update" layoutX="938.0" layoutY="350.0" mnemonicParsing="false" onAction="#UpdateAnnouncement" prefHeight="46.0" prefWidth="96.0" style="-fx-background-color: #4CAF50; -fx-font-weight: bold;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+         </padding>
+      </Button>
+      <Button fx:id="delete" layoutX="1045.0" layoutY="350.0" mnemonicParsing="false" onAction="#DeleteAnnouncement" prefHeight="46.0" prefWidth="96.0" style="-fx-background-color: #4CAF50; -fx-font-weight: bold;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+         </padding>
+      </Button>
+      <ComboBox fx:id="titles" layoutX="318.0" layoutY="78.0" onAction="#ViewAnnouncement" prefHeight="25.0" prefWidth="562.0" />
+      <Label layoutX="318.0" layoutY="45.0" text="Choose Title" textFill="#002e62">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="courses" layoutX="48.0" layoutY="78.0" onAction="#ComboBoxButton" prefWidth="150.0" />
+   </children>
+</AnchorPane>

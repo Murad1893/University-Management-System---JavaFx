@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="loginBackground" prefHeight="485.0" prefWidth="794.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <ImageView fitHeight="489.0" fitWidth="799.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/Untitled-2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="571.0" layoutY="127.0" text="Log In" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="Usernamelabel" layoutX="517.0" layoutY="187.0" prefHeight="17.0" prefWidth="82.0" styleClass="loginLabel" text="Username" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="Passwordlabel" layoutX="515.0" layoutY="256.0" prefHeight="17.0" prefWidth="74.0" styleClass="loginLabel" text="Password" textFill="WHITE" />
+      <TextField fx:id="Username" layoutX="492.0" layoutY="212.0" prefHeight="25.0" prefWidth="225.0" promptText="Username" styleClass="loginField" />
+      <PasswordField fx:id="Password" layoutX="495.0" layoutY="281.0" prefHeight="25.0" prefWidth="225.0" promptText="Password" styleClass="loginField" />
+      <Button id="signInButton" fx:id="SigIn" layoutX="525.0" layoutY="354.0" mnemonicParsing="false" onAction="#SignInButton" onKeyPressed="#SignInButton" prefHeight="52.0" prefWidth="160.0" text="Sign In" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="74.0" fitWidth="99.0" layoutX="569.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:Desktop1revised1.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="errorlabel" layoutX="498.0" layoutY="326.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="WHITE" glyphName="SIGN_OUT" layoutX="550.0" layoutY="387.0" size="20" />
+      <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="501.0" layoutY="199.0" size="16" />
+      <FontAwesomeIconView fill="WHITE" glyphName="KEY" layoutX="496.0" layoutY="269.0" size="16" />
+      
+   </children>
+</AnchorPane>

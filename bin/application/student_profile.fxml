@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1035.0" prefWidth="1499.0" style="-fx-background-color: #f3f3f3;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentController">
+   <children>
+      <Pane prefHeight="1036.0" prefWidth="215.0" style="-fx-background-color: #18202c;">
+         <children>
+            <Button layoutY="424.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="215.0" styleClass="button1" stylesheets="@application.css" text="Button" textFill="#fdc500">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <FontAwesomeIconView fill="WHITE" layoutX="30.0" layoutY="458.0" size="20" wrappingWidth="25.0" />
+            <Button layoutX="-1.0" layoutY="497.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="215.0" styleClass="button1" stylesheets="@application.css" text="Button" textFill="#fdc500">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <FontAwesomeIconView fill="WHITE" layoutX="27.0" layoutY="533.0" size="20" wrappingWidth="25.0" />
+            <Button layoutX="-1.0" layoutY="569.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="215.0" styleClass="button1" stylesheets="@application.css" text="Button" textFill="#fdc500">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <FontAwesomeIconView fill="WHITE" layoutX="27.0" layoutY="606.0" size="20" wrappingWidth="25.0" />
+            <Button layoutX="-1.0" layoutY="641.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="215.0" styleClass="button1" stylesheets="@application.css" text="Button" textFill="#fdc500">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <FontAwesomeIconView fill="WHITE" layoutX="27.0" layoutY="677.0" size="20" wrappingWidth="36.50001679203342" />
+            <Button layoutX="-1.0" layoutY="714.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="215.0" styleClass="button1" stylesheets="@application.css" text="Button" textFill="#fdc500">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <FontAwesomeIconView fill="WHITE" layoutX="27.0" layoutY="747.0" size="20" wrappingWidth="25.0" />
+            <VBox layoutX="-1.0" layoutY="-5.0" prefHeight="109.0" prefWidth="216.0" style="-fx-border-color: #fdc500;">
+               <children>
+                  <ImageView fitHeight="118.0" fitWidth="214.0" nodeOrientation="INHERIT" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="file:Desktop1revised1.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Button layoutY="927.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="215.0" style="-fx-font-size: 16px; -fx-background-color: transparent;" text="LogOut" textFill="#fdc500">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <FontAwesomeIconView fill="#fdc500" layoutX="31.0" layoutY="963.0" size="20" wrappingWidth="25.0" />
+            <ImageView fitHeight="145.0" fitWidth="193.0" layoutX="34.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/student+icon-1320184412790928936.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="35.0" layoutY="355.0" prefHeight="47.0" prefWidth="144.0" text="Muhammad Hassan Azhar" textFill="WHITE">
+               <font>
+                  <Font name="Nirmala UI" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="215.0" prefHeight="114.0" prefWidth="1284.0" style="-fx-background-color: #3f9ce5;">
+         <children>
+            <Text fill="WHITE" layoutX="21.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30px; -fx-font-weight: bold;" text="WELCOME TO ADMIN PORTAL" wrappingWidth="489.9831027984619" />
+            <Label layoutX="1027.0" layoutY="82.0" style="-fx-text-fill: white; -fx-font-weight: bold;" text="Welcome Hassan Azhar" />
+            <Button layoutX="1011.0" layoutY="15.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="158.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-text-fill: white;" text="Messages" />
+            <FontAwesomeIconView fill="#fcfcfc" layoutX="1039.0" layoutY="41.0" />
+            <Circle fill="DODGERBLUE" layoutX="1145.0" layoutY="37.0" radius="13.0" stroke="WHITE" strokeType="INSIDE" style="-fx-fill: red;" />
+            <Text fill="WHITE" layoutX="1141.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text="2" />
+            <HBox layoutX="41.0" layoutY="80.0" prefHeight="40.0" prefWidth="379.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color: #002e62; -fx-text-fill: white;" text="Button" />
+                  <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="98.0" style="-fx-background-color: #002e62; -fx-text-fill: white;" text="Button" />
+                  <Button layoutX="66.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="91.0" style="-fx-background-color: #002e62; -fx-text-fill: white;" text="Button" />
+                  <Button layoutX="122.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="92.0" style="-fx-background-color: #002e62; -fx-text-fill: white;" text="Button" />
+               </children>
+            </HBox>
+         </children></Pane>
+      <AnchorPane layoutX="251.0" layoutY="194.0" prefHeight="465.0" prefWidth="379.0" style="-fx-background-color: white; -fx-border-radius: 10px;">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="-24.0" opacity="0.84" prefHeight="47.0" prefWidth="158.0" style="-fx-background-color: #002e62; -fx-border-radius: 5px;">
+               <children>
+                  <Label layoutX="9.0" layoutY="10.0" prefHeight="26.0" prefWidth="144.0" text="Personal Information" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow spread="0.3" />
+                     </effect>
+                  </Label>
+               </children>
+               <effect>
+                  <Glow level="0.48" />
+               </effect>
+            </AnchorPane>
+            <Label layoutX="14.0" layoutY="47.0" style="-fx-text-fill: #002e62;" text="First Name:" />
+            <Line endX="226.0" layoutX="115.0" layoutY="98.0" startX="-100.0" />
+            <Label fx:id="pifname" layoutX="16.0" layoutY="74.0" text="Muhammad" />
+            <Label layoutX="14.0" layoutY="115.0" style="-fx-text-fill: #002e62;" text="Middle Name:" />
+            <Line endX="226.0" layoutX="115.0" layoutY="166.0" startX="-100.0" />
+            <Label fx:id="pimname" layoutX="16.0" layoutY="142.0" text="Hassan" />
+            <Label layoutX="14.0" layoutY="179.0" style="-fx-text-fill: #002e62;" text="Last Name:" />
+            <Line endX="226.0" layoutX="115.0" layoutY="230.0" startX="-100.0" />
+            <Label fx:id="pilname" layoutX="16.0" layoutY="206.0" text="Azhar" />
+            <Label layoutX="14.0" layoutY="247.0" style="-fx-text-fill: #002e62;" text="Date Of Birth:" />
+            <Line endX="226.0" layoutX="115.0" layoutY="298.0" startX="-100.0" />
+            <Label fx:id="pidob" layoutX="16.0" layoutY="274.0" text="17/03/1998" />
+            <Label layoutX="14.0" layoutY="314.0" style="-fx-text-fill: #002e62;" text="CNIC:" />
+            <Line endX="226.0" layoutX="115.0" layoutY="367.0" startX="-100.0" />
+            <Label fx:id="picnic" layoutX="16.0" layoutY="341.0" text="42101-4338201-5" />
+            <Label layoutX="14.0" layoutY="381.0" style="-fx-text-fill: #002e62;" text="Gender:" />
+            <Line endX="226.0" layoutX="115.0" layoutY="434.0" startX="-100.0" />
+            <Label fx:id="pigender" layoutX="16.0" layoutY="408.0" text="Male" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="668.0" layoutY="194.0" prefHeight="465.0" prefWidth="379.0" style="-fx-background-color: white; -fx-border-radius: 10px;">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="-24.0" opacity="0.84" prefHeight="47.0" prefWidth="158.0" style="-fx-background-color: #002e62; -fx-border-radius: 5px;">
+               <children>
+                  <Label layoutX="9.0" layoutY="10.0" prefHeight="26.0" prefWidth="158.0" text="University Information" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow spread="0.3" />
+                     </effect>
+                  </Label>
+               </children>
+               <effect>
+                  <Glow level="0.48" />
+               </effect>
+            </AnchorPane>
+            <Label layoutX="14.0" layoutY="47.0" style="-fx-text-fill: #002e62;" text="Roll No:" />
+            <Line endX="226.0" layoutX="115.0" layoutY="98.0" startX="-100.0" />
+            <Label fx:id="uiroll" layoutX="16.0" layoutY="74.0" text="17K-3732" />
+            <Label layoutX="14.0" layoutY="115.0" style="-fx-text-fill: #002e62;" text="Department:" />
+            <Line endX="226.0" layoutX="115.0" layoutY="166.0" startX="-100.0" />
+            <Label fx:id="uideptname" layoutX="16.0" layoutY="142.0" text="Computer Science" />
+            <Label layoutX="14.0" layoutY="179.0" style="-fx-text-fill: #002e62;" text="Department Code:" />
+            <Line endX="226.0" layoutX="115.0" layoutY="230.0" startX="-100.0" />
+            <Label fx:id="uideptcode" layoutX="16.0" layoutY="206.0" text="92831" />
+            <Label layoutX="14.0" layoutY="247.0" style="-fx-text-fill: #002e62;" text="Batch:" />
+            <Line endX="226.0" layoutX="115.0" layoutY="298.0" startX="-100.0" />
+            <Label fx:id="uibatch" layoutX="16.0" layoutY="274.0" text="2017" />
+            <Label layoutX="14.0" layoutY="314.0" style="-fx-text-fill: #002e62;" text="Degree" />
+            <Line endX="226.0" layoutX="115.0" layoutY="367.0" startX="-100.0" />
+            <Label layoutX="16.0" layoutY="341.0" text="Bachelor Of Science" />
+            <Label fx:id="uidegree" layoutX="125.0" layoutY="341.0" text="Computer Science" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1088.0" layoutY="194.0" prefHeight="465.0" prefWidth="379.0" style="-fx-background-color: white; -fx-border-radius: 10px;">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="-24.0" opacity="0.84" prefHeight="47.0" prefWidth="158.0" style="-fx-background-color: #002e62; -fx-border-radius: 5px;">
+               <children>
+                  <Label layoutX="9.0" layoutY="10.0" prefHeight="26.0" prefWidth="144.0" text="Contact Information" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow spread="0.3" />
+                     </effect>
+                  </Label>
+               </children>
+               <effect>
+                  <Glow level="0.48" />
+               </effect>
+            </AnchorPane>
+            <Label layoutX="14.0" layoutY="47.0" style="-fx-text-fill: #002e62;" text="Mobile Number:" />
+            <Line endX="226.0" layoutX="115.0" layoutY="98.0" startX="-100.0" />
+            <Label fx:id="cimobno" layoutX="16.0" layoutY="74.0" text="03232783340" />
+            <Label layoutX="14.0" layoutY="115.0" style="-fx-text-fill: #002e62;" text="Alternative Phone:" />
+            <Line endX="226.0" layoutX="115.0" layoutY="166.0" startX="-100.0" />
+            <Label fx:id="cialtno" layoutX="16.0" layoutY="142.0" text="03162605998" />
+            <Label layoutX="14.0" layoutY="179.0" style="-fx-text-fill: #002e62;" text="Email (personal):" />
+            <Line endX="226.0" layoutX="115.0" layoutY="230.0" startX="-100.0" />
+            <Label fx:id="cimailp" layoutX="16.0" layoutY="206.0" text="loading_pasha@gmail.com" />
+            <Label layoutX="14.0" layoutY="247.0" style="-fx-text-fill: #002e62;" text="Email (Work):" />
+            <Line endX="226.0" layoutX="115.0" layoutY="298.0" startX="-100.0" />
+            <Label fx:id="cimailw" layoutX="16.0" layoutY="274.0" text="k173732@nu.edu.pk" />
+            <Label layoutX="14.0" layoutY="314.0" style="-fx-text-fill: #002e62;" text="Permenant Address:" />
+            <Line endX="226.0" layoutX="115.0" layoutY="367.0" startX="-100.0" />
+            <Label fx:id="ciaddp" layoutX="16.0" layoutY="341.0" text="Sector 11-A,House No A-172,NorthKarachi,Karachi" />
+            <Label layoutX="14.0" layoutY="381.0" style="-fx-text-fill: #002e62;" text="Current Address:" />
+            <Line endX="226.0" layoutX="115.0" layoutY="434.0" startX="-100.0" />
+            <Label fx:id="ciaddc" layoutX="16.0" layoutY="408.0" text="Sector 11-A,House No A-172,NorthKarachi,Karachi" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

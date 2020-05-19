@@ -1,0 +1,165 @@
+#loginBackground{
+	-fx-background-color:  #1c2230;
+}
+
+.loginLabel{
+	-fx-font-weight:  bold;
+}
+
+.loginField{
+	-fx-background-color: transparent;
+	-fx-border-color:  white;
+	-fx-border-radius:  10px;
+	-fx-text-fill:  white;
+}
+
+#signInButton{
+	-fx-font-weight:  bold;
+	-fx-background-color:  #008CBA;
+}
+
+#signInButton:hover{
+	-fx-font-weight:  bold;
+	-fx-background-color:  #f6b93b;
+}
+
+.dashboardButton{
+	-fx-font-size: 15px;
+	-fx-background-color: transparent;
+}
+
+.dashboardButton:hover{
+ 	-fx-background-color: #f6b93b;
+    -fx-border-color:#f6b93b;
+    -fx-border-width:3px;
+}
+
+#adminPageHeader{
+	-fx-background-color:  #355c7d;
+}
+
+#adminSidebar{
+	-fx-background-color:  #2e3442;
+}
+
+.pane{
+	-fx-background-color:  #f1f2f8;
+}
+
+.crudButton{
+	-fx-font-size: 15px;
+}
+
+.crudButton:hover{
+	-fx-font-weight: bold;
+}
+
+.crudInsert{
+	-fx-background-color:  #3f9ce5;
+}
+
+.crudUpdate{
+	-fx-background-color:  #2e7d32;
+}
+
+.crudDelete{
+	-fx-background-color:  #d50000;
+}
+
+.crudView{
+	-fx-background-color:  #00838f;
+}
+
+.crudViewall{
+	-fx-background-color:  #00695c;
+}
+
+.fill-blue
+{
+    -fx-background-color:blue;
+}
+
+.button1
+{
+	-fx-font-size: 15px;
+	-fx-text-fill: white;
+	-fx-background-color: transparent;
+}
+
+.button1:hover
+{
+	-fx-background-color: #f6b93b;
+    -fx-border-color:#f6b93b;
+    -fx-border-width:3px;
+   
+}
+ 
+
+ 
+  .btn3
+ {
+ 	-fx-background-color:  #3f51b5;
+ }
+ 
+ .btn3:hover
+ {
+ 	-fx-background-color: #f6b93b;
+    -fx-border-color:#f6b93b;
+   
+ }
+
+   .btn4
+ {
+ 	-fx-font-size: 15px;
+ 	-fx-background-color:  #3f51b5;
+ }
+ 
+ .btn4:hover
+ {
+ 	-fx-background-color: #f6b93b;
+    -fx-border-color:#f6b93b;
+   
+ }
+ 
+   .btn5
+ {
+ 	-fx-font-size: 15px;
+ 	-fx-background-color:#4CAF50;
+ }
+ 
+ .btn5:hover
+ {
+ 	-fx-background-color: #f6b93b;
+    -fx-border-color:#f6b93b;
+   
+ }
+ 
+.scroll-pane {
+    -fx-background-color: #ffffff;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color:  #3f51b5;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: white;
+}

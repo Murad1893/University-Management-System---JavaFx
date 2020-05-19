@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="960.0" prefWidth="1306.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentMarkViewController">
+   <children>
+      <AnchorPane layoutX="30.0" layoutY="21.0" prefHeight="872.0" prefWidth="1247.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane layoutX="1.0" prefHeight="50.0" prefWidth="1246.0" style="-fx-background-color: #3f51b5;">
+               <children>
+                  <Label layoutX="23.0" layoutY="14.0" text="Courses" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="course8" layoutX="1166.0" layoutY="2.0" mnemonicParsing="false" onAction="#returncourse8" prefHeight="48.0" prefWidth="68.0" style="-fx-background-color: transparent; -fx-font-weight: bold;" text="Course" textFill="WHITE" />
+                  <Button fx:id="course7" layoutX="1099.0" layoutY="2.0" mnemonicParsing="false" onAction="#returncourse7" prefHeight="48.0" prefWidth="68.0" style="-fx-background-color: transparent; -fx-font-weight: bold;" text="Course" textFill="WHITE" />
+                  <Button fx:id="course6" layoutX="1031.0" layoutY="2.0" mnemonicParsing="false" onAction="#returncourse6" prefHeight="48.0" prefWidth="68.0" style="-fx-background-color: transparent; -fx-font-weight: bold;" text="Course" textFill="WHITE" />
+                  <Button fx:id="course5" layoutX="963.0" layoutY="2.0" mnemonicParsing="false" onAction="#returncourse5" prefHeight="48.0" prefWidth="68.0" style="-fx-background-color: transparent; -fx-font-weight: bold;" text="Course" textFill="WHITE" />
+                  <Button fx:id="course4" layoutX="895.0" layoutY="2.0" mnemonicParsing="false" onAction="#returncourse4" prefHeight="48.0" prefWidth="68.0" style="-fx-background-color: transparent; -fx-font-weight: bold;" text="Course" textFill="WHITE" />
+                  <Button fx:id="course3" layoutX="827.0" layoutY="1.0" mnemonicParsing="false" onAction="#returncourse3" prefHeight="48.0" prefWidth="68.0" style="-fx-background-color: transparent; -fx-font-weight: bold;" text="Course" textFill="WHITE" />
+                  <Button fx:id="course2" layoutX="759.0" layoutY="2.0" mnemonicParsing="false" onAction="#returncourse2" prefHeight="48.0" prefWidth="68.0" style="-fx-background-color: transparent; -fx-font-weight: bold;" text="Course" textFill="WHITE" />
+                  <Button fx:id="course1" layoutX="691.0" layoutY="2.0" mnemonicParsing="false" onAction="#returncourse1" prefHeight="48.0" prefWidth="68.0" style="-fx-background-color: transparent; -fx-font-weight: bold;" text="Course" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="1.0" layoutY="61.0" prefHeight="30.0" prefWidth="1247.0" style="-fx-background-color: #3f51b5;">
+               <children>
+                  <Label layoutX="14.0" layoutY="7.0" style="-fx-font-weight: bold;" text="Mid Term" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="13.0" layoutY="110.0" text="Total Marks :" />
+            <Label fx:id="midtotal" layoutX="90.0" layoutY="110.0" text="-" />
+            <Label layoutX="13.0" layoutY="139.0" text="Obtained :" />
+            <Label fx:id="midobt" layoutX="79.0" layoutY="139.0" text="-" />
+            <Label layoutX="13.0" layoutY="167.0" text="Weightage :" />
+            <Label fx:id="midweight" layoutX="88.0" layoutY="167.0" text="-" />
+            <AnchorPane layoutY="191.0" prefHeight="30.0" prefWidth="1248.0" style="-fx-background-color: #3f51b5;">
+               <children>
+                  <Label layoutX="14.0" layoutY="7.0" style="-fx-font-weight: bold;" text="Assignment" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="19.0" layoutY="241.0" text="Total Marks :" />
+            <Label fx:id="assigntotal" layoutX="96.0" layoutY="241.0" text="-" />
+            <Label layoutX="19.0" layoutY="270.0" text="Obtained :" />
+            <Label fx:id="assignobt" layoutX="85.0" layoutY="270.0" text="-" />
+            <Label layoutX="19.0" layoutY="298.0" text="Weightage :" />
+            <Label fx:id="assignweight" layoutX="95.0" layoutY="298.0" text="-" />
+            <AnchorPane layoutY="322.0" prefHeight="30.0" prefWidth="1248.0" style="-fx-background-color: #3f51b5;">
+               <children>
+                  <Label layoutX="14.0" layoutY="7.0" style="-fx-font-weight: bold;" text="Project" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="17.0" layoutY="371.0" text="Total Marks :" />
+            <Label fx:id="projecttotal" layoutX="98.0" layoutY="372.0" text="-" />
+            <Label layoutX="17.0" layoutY="400.0" text="Obtained :" />
+            <Label fx:id="projectobt" layoutX="87.0" layoutY="401.0" text="-" />
+            <Label layoutX="17.0" layoutY="428.0" text="Weightage :" />
+            <Label fx:id="projectweight" layoutX="96.0" layoutY="429.0" text="-" />
+            <AnchorPane layoutY="452.0" prefHeight="30.0" prefWidth="1248.0" style="-fx-background-color: #3f51b5;">
+               <children>
+                  <Label layoutX="14.0" layoutY="7.0" style="-fx-font-weight: bold;" text="Quiz" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="12.0" layoutY="501.0" text="Total Marks :" />
+            <Label fx:id="quiztotal" layoutX="93.0" layoutY="502.0" text="-" />
+            <Label layoutX="12.0" layoutY="530.0" text="Obtained :" />
+            <Label fx:id="quizobt" layoutX="82.0" layoutY="531.0" text="-" />
+            <Label layoutX="12.0" layoutY="558.0" text="Weightage :" />
+            <Label fx:id="quizweight" layoutX="90.0" layoutY="559.0" text="-" />
+            <AnchorPane layoutX="2.0" layoutY="714.0" prefHeight="30.0" prefWidth="1247.0" style="-fx-background-color: #3f51b5;">
+               <children>
+                  <Label layoutX="14.0" layoutY="7.0" style="-fx-font-weight: bold;" text="Grand Total" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="19.0" layoutY="763.0" text="Total Marks :" />
+            <Label fx:id="grandtotal" layoutX="100.0" layoutY="764.0" text="-" />
+            <Label layoutX="19.0" layoutY="792.0" text="Obtained :" />
+            <Label fx:id="grandobt" layoutX="89.0" layoutY="793.0" text="-" />
+            <Label layoutX="19.0" layoutY="820.0" text="Weightage :" />
+            <Label fx:id="grandweight" layoutX="95.0" layoutY="821.0" text="-" />
+            <Label layoutX="19.0" layoutY="848.0" text="Final Grade" />
+            <Label fx:id="grade" layoutX="93.0" layoutY="849.0" text="-" />
+            <AnchorPane layoutY="584.0" prefHeight="30.0" prefWidth="1248.0" style="-fx-background-color: #3f51b5;">
+               <children>
+                  <Label layoutX="14.0" layoutY="7.0" style="-fx-font-weight: bold;" text="Final" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="12.0" layoutY="633.0" text="Total Marks :" />
+            <Label layoutX="12.0" layoutY="662.0" text="Obtained :" />
+            <Label layoutX="12.0" layoutY="690.0" text="Weightage :" />
+            <Label fx:id="finaltotal" layoutX="95.0" layoutY="634.0" text="-" />
+            <Label fx:id="finalobt" layoutX="84.0" layoutY="663.0" text="-" />
+            <Label fx:id="finalweight" layoutX="92.0" layoutY="691.0" text="-" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="pa" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1037.0" prefWidth="1499.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TeacherSidebarController">
+   <left>
+      <AnchorPane prefHeight="953.0" prefWidth="180.0" style="-fx-background-color: #2e3442;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="tbtn1" layoutY="360.0" mnemonicParsing="false" onAction="#TeachShowProfile" prefHeight="59.0" prefWidth="204.0" style="-fx-font-size: 15;" styleClass="btn2" stylesheets="@application.css" text="Profile" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="tbtn2" layoutY="427.0" mnemonicParsing="false" onAction="#TeachAddAttendence" prefHeight="59.0" prefWidth="202.0" style="-fx-font-size: 15;" styleClass="btn2" stylesheets="@application.css" text="Attendence" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="tbtn3" layoutY="496.0" mnemonicParsing="false" onAction="#TeachGrading" prefHeight="59.0" prefWidth="203.0" style="-fx-font-size: 15;" styleClass="btn2" stylesheets="@application.css" text="Grading" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="tbtn4" layoutX="2.0" layoutY="567.0" mnemonicParsing="false" onAction="#TeachAnnounce" prefHeight="59.0" prefWidth="201.0" style="-fx-font-size: 15;" styleClass="btn2" stylesheets="@application.css" text="Announcement" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="tbtn7" layoutY="853.0" mnemonicParsing="false" onAction="#TeachSignOut" prefHeight="59.0" prefWidth="203.0" style="-fx-font-size: 15px;" styleClass="btn2" stylesheets="@application.css" text="Sign Out" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="14.0" layoutY="396.0" size="22" />
+            <FontAwesomeIconView fill="WHITE" glyphName="PENCIL_SQUARE_ALT" layoutX="9.0" layoutY="534.0" size="22" />
+            <FontAwesomeIconView fill="WHITE" glyphName="SIGN_OUT" layoutX="14.0" layoutY="887.0" size="22" />
+            <ImageView fx:id="staffimage" fitHeight="148.0" fitWidth="129.0" layoutX="36.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/teacher-icon-png-16.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="61.0" layoutY="283.0" text="Status: " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="109.0" layoutY="283.0" text="Online" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Circle fill="#3abd21" layoutX="46.0" layoutY="292.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="12.0" layoutY="246.0" text="Hello, " textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="fullname" layoutX="46.0" layoutY="246.0" text="Muhammad Hassan Azhar" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR" layoutX="12.0" layoutY="461.0" size="22" />
+            <FontAwesomeIconView fill="WHITE" glyphName="BULLHORN" layoutX="14.0" layoutY="601.0" size="22" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="1036.0" prefWidth="1316.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <AnchorPane prefHeight="83.0" prefWidth="1499.0" style="-fx-background-color: #355c7d;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="85.0" fitWidth="204.0" layoutY="-1.0" pickOnBounds="true">
+               <image>
+                  <Image url="file:Desktop1revised1.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="309.0" layoutY="38.0" prefHeight="45.0" prefWidth="420.0" text="TEACHER PORTAL" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="75.0" fitWidth="88.0" layoutX="213.0" layoutY="3.0" pickOnBounds="true">
+               <image>
+                  <Image url="file:Student.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

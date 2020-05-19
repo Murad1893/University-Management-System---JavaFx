@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="960.0" prefWidth="1306.0" style="-fx-background-color: #f1f2f8;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentCourseRegistrationController">
+   <children>
+      <Label layoutX="36.0" layoutY="31.0" text="Course Registration">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="34.0" layoutY="62.0" prefHeight="84.0" prefWidth="1250.0" style="-fx-background-color: white; -fx-border-color: #3f51b5; -fx-border-radius: 10px;">
+         <children>
+            <Label layoutX="28.0" layoutY="14.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Roll No:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="rollno" layoutX="96.0" layoutY="16.0" style="-fx-font-size: 12px;" text="17K-3732" />
+            <Label layoutX="28.0" layoutY="47.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Name:" />
+            <Label fx:id="name" layoutX="79.0" layoutY="50.0" style="-fx-font-size: 12px;" text="Muhammad Hassan Azhar" />
+            <Label layoutX="660.0" layoutY="15.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Batch:" />
+            <Label fx:id="batch" layoutX="711.0" layoutY="18.0" style="-fx-font-size: 12px;" text="2017" />
+            <Label layoutX="660.0" layoutY="46.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Section:" />
+            <Label fx:id="section" layoutX="736.0" layoutY="49.0" style="-fx-font-size: 12px;" text="B" />
+            <Label layoutX="378.0" layoutY="13.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Credits Attempted:" />
+            <Label fx:id="cattmp" layoutX="533.0" layoutY="15.0" style="-fx-font-size: 12px;" text="84" />
+            <Label layoutX="378.0" layoutY="46.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Status:" />
+            <Label layoutX="938.0" layoutY="15.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Department:" />
+            <Label fx:id="status" layoutX="437.0" layoutY="49.0" style="-fx-font-size: 12px;" text="Current" />
+            <Label fx:id="depart" layoutX="1060.0" layoutY="17.0" style="-fx-font-size: 12px;" text="dept" />
+            <Label layoutX="938.0" layoutY="48.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Warning Count:" />
+            <Label fx:id="warning" layoutX="1060.0" layoutY="50.0" style="-fx-font-size: 12px;" text="0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="34.0" layoutY="165.0" prefHeight="745.0" prefWidth="1116.0" style="-fx-background-color: #3f51b5; -fx-border-color: #3f51b5;">
+         <children>
+            <ScrollPane layoutY="46.0" prefHeight="697.0" prefWidth="1250.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1460.0" prefWidth="1248.0">
+                     <children>
+                        <TableView fx:id="table" prefHeight="1460.0" prefWidth="1238.0">
+                          <columns>
+                            <TableColumn fx:id="col_course" prefWidth="347.0" text="Course" />
+                              <TableColumn fx:id="col_chr" prefWidth="267.0" text="Credit Hr" />
+                              <TableColumn fx:id="col_status" minWidth="0.0" prefWidth="282.0" text="Status" />
+                              <TableColumn fx:id="action" minWidth="0.0" prefWidth="353.0" text="Action" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Label layoutX="11.0" layoutY="9.0" style="-fx-font-weight: bold;" text="Course Registration" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

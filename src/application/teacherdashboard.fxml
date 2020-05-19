@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="960.0" prefWidth="1306.0" style="-fx-background-color: #f1f2f8;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.teacherdashboardcontroller">
+   <children>
+      <AnchorPane layoutX="47.0" layoutY="39.0" prefHeight="457.0" prefWidth="394.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane layoutX="22.0" layoutY="-25.0" prefHeight="51.0" prefWidth="204.0" style="-fx-background-color: #3f51b5;">
+               <children>
+                  <Label layoutX="51.0" layoutY="15.0" text="Personal Information" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="11.0" layoutY="31.0" size="20" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="22.0" layoutY="49.0" text="First Name:" textFill="#002e62">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Line endX="243.0" layoutX="125.0" layoutY="103.0" startX="-100.0" />
+            <Label fx:id="teachfname" layoutX="22.0" layoutY="75.0" text="Muhammad" />
+            <Label layoutX="23.0" layoutY="121.0" text="Middle Name" textFill="#002e62">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Line endX="243.0" layoutX="126.0" layoutY="175.0" startX="-100.0" />
+            <Label fx:id="teachmname" layoutX="23.0" layoutY="147.0" text="Hassan" />
+            <Label layoutX="24.0" layoutY="190.0" text="Last Name" textFill="#002e62">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Line endX="243.0" layoutX="127.0" layoutY="244.0" startX="-100.0" />
+            <Label fx:id="teachlname" layoutX="24.0" layoutY="216.0" text="Azhar" />
+            <Label layoutX="27.0" layoutY="261.0" text="CNIC" textFill="#002e62">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Line endX="243.0" layoutX="130.0" layoutY="315.0" startX="-100.0" />
+            <Label fx:id="teachcnic" layoutX="27.0" layoutY="287.0" text="42101-4338201-5" />
+            <Label layoutX="28.0" layoutY="332.0" text="Date Of Birth" textFill="#002e62">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Line endX="243.0" layoutX="131.0" layoutY="386.0" startX="-100.0" />
+            <Label fx:id="teachdob" layoutX="28.0" layoutY="358.0" text="17/03/1998" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="483.0" layoutY="40.0" prefHeight="457.0" prefWidth="394.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane layoutX="22.0" layoutY="-25.0" prefHeight="51.0" prefWidth="204.0" style="-fx-background-color: #3f51b5;">
+               <children>
+                  <Label layoutX="51.0" layoutY="15.0" text="University Information" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="WHITE" glyphName="UNIVERSITY" layoutX="11.0" layoutY="31.0" size="20" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="21.0" layoutY="43.0" text="Staff ID" textFill="#002e62">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Line endX="243.0" layoutX="124.0" layoutY="97.0" startX="-100.0" />
+            <Label fx:id="teachid" layoutX="21.0" layoutY="69.0" text="17K-3732" />
+            <Label layoutX="22.0" layoutY="115.0" text="Department" textFill="#002e62">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Line endX="243.0" layoutX="125.0" layoutY="169.0" startX="-100.0" />
+            <Label fx:id="teachdepart" layoutX="22.0" layoutY="141.0" text="Computer Science" />
+            <Label layoutX="23.0" layoutY="184.0" text="Job Title" textFill="#002e62">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Line endX="243.0" layoutX="126.0" layoutY="238.0" startX="-100.0" />
+            <Label fx:id="teachjob" layoutX="23.0" layoutY="210.0" text="Assistant Professor" />
+            <Label layoutX="26.0" layoutY="255.0" text="Qualification" textFill="#002e62">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Line endX="243.0" layoutX="129.0" layoutY="309.0" startX="-100.0" />
+            <Label fx:id="teachqaulify" layoutX="26.0" layoutY="281.0" text="MS Computer Science" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="898.0" layoutY="36.0" prefHeight="422.0" prefWidth="394.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane layoutX="22.0" layoutY="-22.0" prefHeight="51.0" prefWidth="204.0" style="-fx-background-color: #3f51b5;">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="PHONE" layoutX="11.0" layoutY="34.0" size="20" />
+                  <Label layoutX="56.0" layoutY="16.0" prefHeight="17.0" prefWidth="147.0" text="Contact Information" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ScrollPane layoutY="31.0" prefHeight="433.0" prefWidth="394.0" style="-fx-background-color: white;">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="425.0" prefWidth="392.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="23.0" layoutY="14.0" text="Mobile Number" textFill="#002e62">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Line endX="243.0" layoutX="126.0" layoutY="68.0" startX="-100.0" />
+                        <Label fx:id="teachmob" layoutX="23.0" layoutY="40.0" text="03231783340" />
+                        <Label layoutX="24.0" layoutY="81.0" text="Alternative Number" textFill="#002e62">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Line endX="243.0" layoutX="127.0" layoutY="135.0" startX="-100.0" />
+                        <Label fx:id="teachalt" layoutX="24.0" layoutY="107.0" text="03162605998" />
+                        <Label layoutX="23.0" layoutY="153.0" text="Email (personal)" textFill="#002e62">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Line endX="243.0" layoutX="126.0" layoutY="207.0" startX="-100.0" />
+                        <Label fx:id="teachmailp" layoutX="23.0" layoutY="179.0" text="loading.pasha@gmail.com" />
+                        <Label layoutX="23.0" layoutY="221.0" text="Email (work)" textFill="#002e62">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Line endX="243.0" layoutX="126.0" layoutY="275.0" startX="-100.0" />
+                        <Label fx:id="teachmailw" layoutX="23.0" layoutY="247.0" text="k173732@nu.edu.pk" />
+                        <Label layoutX="27.0" layoutY="290.0" text="Permenant Address" textFill="#002e62">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Line endX="243.0" layoutX="130.0" layoutY="344.0" startX="-100.0" />
+                        <Label fx:id="teachaddp" layoutX="27.0" layoutY="316.0" text="Sector 11-A,House No A-172,NorthKarachi,Karachi" />
+                        <Label layoutX="25.0" layoutY="359.0" text="Current Address" textFill="#002e62">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Line endX="243.0" layoutX="128.0" layoutY="413.0" startX="-100.0" />
+                        <Label fx:id="teachaddc" layoutX="25.0" layoutY="385.0" text="Sector 11-A,House No A-172,NorthKarachi,Karachi" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="47.0" layoutY="553.0" prefHeight="369.0" prefWidth="543.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane layoutX="24.0" layoutY="-25.0" prefHeight="51.0" prefWidth="204.0" style="-fx-background-color: #3f51b5;">
+               <children>
+                  <Label layoutX="51.0" layoutY="15.0" text="Course Information" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="WHITE" glyphName="BOOK" layoutX="11.0" layoutY="32.0" size="20" />
+               </children>
+            </AnchorPane>
+            <TableView fx:id="table" layoutX="24.0" layoutY="41.0" prefHeight="314.0" prefWidth="496.0">
+              <columns>
+                <TableColumn fx:id="teachcourse" editable="false" prefWidth="227.0" style="-fx-background-color: none;" text="Course" />
+                <TableColumn fx:id="teachsec" prefWidth="270.0" text="Section" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="609.0" layoutY="553.0" prefHeight="257.0" prefWidth="684.0" style="-fx-background-color: white; -fx-border-radius: 10px;">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="-24.0" opacity="0.84" prefHeight="47.0" prefWidth="178.0" style="-fx-background-color: #3f51b5; -fx-border-radius: 5px;">
+               <children>
+                  <Label layoutX="52.0" layoutY="11.0" prefHeight="26.0" prefWidth="131.0" text="Change Password" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="WHITE" glyphName="KEY" layoutX="14.0" layoutY="31.0" size="20" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="oplabel" layoutX="17.0" layoutY="44.0" style="-fx-text-fill: #002e62;" text="Old Password:" />
+            <Line endX="226.0" layoutX="118.0" layoutY="95.0" startX="-100.0" />
+            <Label fx:id="nplabel" layoutX="17.0" layoutY="112.0" style="-fx-text-fill: #002e62;" text="New Password:" />
+            <Line endX="226.0" layoutX="118.0" layoutY="163.0" startX="-100.0" />
+            <Label fx:id="nplabel2" layoutX="17.0" layoutY="176.0" style="-fx-text-fill: #002e62;" text="Confirnm new password:" />
+            <Line endX="226.0" layoutX="118.0" layoutY="223.0" startX="-100.0" />
+            <Label fx:id="wplabel" layoutX="534.0" layoutY="166.0" text="*Wrong Password" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="update" layoutX="549.0" layoutY="195.0" mnemonicParsing="false" onAction="#Update" prefHeight="31.0" prefWidth="104.0" style="-fx-font-weight: bold;" styleClass="btn5" stylesheets="@application.css" text="Update" textFill="WHITE" />
+            <PasswordField fx:id="pass" layoutX="18.0" layoutY="70.0" prefHeight="25.0" prefWidth="327.0" promptText="Old Password" style="-fx-border-color: none; -fx-border-radius: none; -fx-background-color: transparent; -fx-border-bottom: none;" />
+            <PasswordField fx:id="newpass1" layoutX="18.0" layoutY="138.0" prefHeight="25.0" prefWidth="327.0" promptText="Password" style="-fx-border-color: none; -fx-border-radius: none; -fx-background-color: transparent; -fx-border-bottom: none;" />
+            <PasswordField fx:id="newpass2" layoutX="18.0" layoutY="198.0" prefHeight="25.0" prefWidth="327.0" promptText="Password" style="-fx-border-color: none; -fx-border-radius: none; -fx-background-color: transparent; -fx-border-bottom: none;" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

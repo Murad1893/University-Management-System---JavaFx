@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="936.0" prefWidth="1280.0" style="-fx-background-color: #f1f2f8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DepartmentController">
+   <children>
+      <Pane layoutX="36.0" layoutY="44.0" prefHeight="697.0" prefWidth="523.0" style="-fx-background-color: #e6e6e6;">
+         <children>
+          <AnchorPane layoutX="1.0" minHeight="0.0" minWidth="0.0" prefHeight="697.0" prefWidth="522.0" style="-fx-border-radius: 0px; -fx-border-color: #18202c; -fx-background-color: white;">
+               <children>
+                  <Text fx:id="deptcodelabel" fill="#042954" layoutX="38.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text="Department Code" wrappingWidth="160.0" />
+                  <TextField fx:id="deptid" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="38.0" layoutY="126.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="Dept Code" style="-fx-border-color: none; -fx-border-radius: none; -fx-border-bottom: 2px solid green; -fx-background-color: transparent;">
+                     <opaqueInsets>
+                        <Insets right="3.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <Text fx:id="deptshortnamelabel" fill="#042954" layoutX="40.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text="Department Short Name" wrappingWidth="200.0" />
+                  <TextField fx:id="deptshortname" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="40.0" layoutY="274.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="Department Short Name" style="-fx-border-color: none; -fx-border-radius: 0; -fx-border-bottom: 2px solid green; -fx-background-color: transparent;">
+                     <opaqueInsets>
+                        <Insets right="3.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <AnchorPane prefHeight="59.0" prefWidth="522.0" style="-fx-background-color: #3f51b5;">
+                     <children>
+                        <Label layoutX="176.0" layoutY="5.0" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-font-family: Segoe UI Semibold; -fx-text-fill: white;" text="Data Panel" />
+                        <Button fx:id="Refresh" layoutX="451.0" layoutY="6.0" mnemonicParsing="false" onAction="#RefreshRecord" prefHeight="49.0" prefWidth="57.0" styleClass="button1" stylesheets="@application.css">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="30" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="hodlabel" fill="#042954" layoutX="39.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text="Head Of Department" wrappingWidth="184.9830722808838" />
+                  <TextField fx:id="hod" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="39.0" layoutY="349.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="HOD Name" style="-fx-border-color: none; -fx-border-radius: none; -fx-border-bottom: 2px solid green; -fx-background-color: transparent;">
+                     <opaqueInsets>
+                        <Insets right="3.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <Text fx:id="deptnamelabel" fill="#042954" layoutX="40.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text="Department Name" wrappingWidth="165.9830722808838" />
+                  <TextField fx:id="deptname" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="40.0" layoutY="202.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="Department Name" style="-fx-border-color: none; -fx-border-radius: 0; -fx-background-color: transparent;">
+                     <opaqueInsets>
+                        <Insets right="3.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <Line endX="106.0" layoutX="306.0" layoutY="153.0" startX="-268.0" stroke="#042954" />
+                  <Line endX="106.0" layoutX="307.0" layoutY="231.0" startX="-268.0" stroke="#042954" />
+                  <Line endX="106.0" layoutX="304.0" layoutY="300.0" startX="-268.0" stroke="#042954" />
+                  <Line endX="106.0" layoutX="302.0" layoutY="375.0" startX="-268.0" stroke="#042954" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+    <AnchorPane layoutX="586.0" layoutY="44.0" minHeight="0.0" minWidth="0.0" prefHeight="697.0" prefWidth="685.0">
+         <children>
+            <TableView fx:id="table" layoutX="-1.0" prefHeight="697.0" prefWidth="685.0" style="-fx-border-color: #002e62;">
+              <columns>
+                <TableColumn fx:id="col_deptcode" prefWidth="179.0" style="-fx-background-color: transparent;" text="Dept_Code" />
+                <TableColumn fx:id="col_deptname" prefWidth="208.0" style="-fx-background-color: transparent;" text="Dept_Name" />
+                  <TableColumn fx:id="col_deptshortname" prefWidth="136.0" style="-fx-background-color: transparent;" text="Dept_Short_Name" />
+                  <TableColumn fx:id="col_hod" prefWidth="179.0" style="-fx-background-color: transparent;" text="HOD" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="Insert" layoutX="631.0" layoutY="787.0" mnemonicParsing="false" onAction="#InsertStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #3f9ce5; -fx-border-radius: 0; -fx-border-color: #18202c;" text="INSERT" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="UpdDel" layoutX="748.0" layoutY="787.0" mnemonicParsing="false" onAction="#UpdateStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #2e7d32; -fx-border-radius: 0; -fx-border-color: #18202c;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="Delete" layoutX="856.0" layoutY="787.0" mnemonicParsing="false" onAction="#DeleteStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #d50000; -fx-border-radius: 0; -fx-border-color: #18202c;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="View" layoutX="967.0" layoutY="787.0" mnemonicParsing="false" onAction="#SearchStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #00838f; -fx-border-radius: 0; -fx-border-color: #18202c;" text="VIEW" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="ViewAll" layoutX="1081.0" layoutY="787.0" mnemonicParsing="false" onAction="#ViewStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #00695c; -fx-border-radius: 0; -fx-border-color: #18202c;" text="VIEW ALL" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

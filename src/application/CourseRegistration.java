@@ -46,7 +46,7 @@ public class CourseRegistration {
 						ps.execute();
 						
 						action.setDisable(true);
-						
+										
 					} catch (IOException | SQLException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();

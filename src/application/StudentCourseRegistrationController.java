@@ -9,7 +9,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
+import java.util.Timer;
+import java.util.TimerTask;
 
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -22,6 +27,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.util.Duration;
 
 public class StudentCourseRegistrationController implements Initializable {
 	
@@ -76,7 +82,14 @@ public class StudentCourseRegistrationController implements Initializable {
 		try {
 
 			con = DBConnector.getConnection();
-			run();
+			
+			Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(1), ev -> {
+				courses.clear();
+				table.getItems().clear();
+				run2();
+		    }));
+		    timeline.setCycleCount(Animation.INDEFINITE);
+		    timeline.play();
 	
 		} 
 		catch (SQLException e) {
@@ -85,7 +98,7 @@ public class StudentCourseRegistrationController implements Initializable {
 		}
 	}
    
-    public void run()
+    public void run2()
 	{
 		try {
 			BufferedReader fd = new BufferedReader(new FileReader("UAC.txt"));

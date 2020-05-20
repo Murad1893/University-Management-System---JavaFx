@@ -76,7 +76,7 @@ public class StudentSideBarController implements Initializable {
 		private ImageView studentimage;
 	     
 	    public void ShowProfile(ActionEvent e)
-	    { LoadPane("studentdashboard");}
+	    {LoadPane("studentdashboard");}
 	    
 	    public void ShowCourse(ActionEvent e)
 	    {LoadPane("StudentCourse");}
@@ -105,13 +105,17 @@ public class StudentSideBarController implements Initializable {
 	  			// TODO Auto-generated catch block
 	  			e1.printStackTrace();
 	  		}
-	            Scene scene3 = new Scene(view3);
+	           Scene scene3 = new Scene(view3);
 	           Stage window = (Stage)((Node)e.getSource()).getScene().getWindow();
 	           window.setScene(scene3);
 	           window.centerOnScreen();
 	           new FadeIn(view3).play();
 	           window.show();
 	           
+	    }
+	    
+	    public BorderPane getPane() {
+	    	return pa;
 	    }
 	    
 	    public void LoadPane(String ui)
@@ -128,7 +132,7 @@ public class StudentSideBarController implements Initializable {
 	    	pa.setCenter(root);
 	    	
 	    }
-
+	    
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 	

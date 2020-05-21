@@ -58,12 +58,12 @@
                      </font>
                   </Label>
                   <TextArea fx:id="ta" editable="false" layoutX="14.0" layoutY="153.0" prefHeight="210.0" prefWidth="540.0" style="-fx-border-color: #3f51b5; -fx-background-color: transparent;" />
-                  <Button fx:id="download" layoutX="14.0" layoutY="381.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="164.0" style="-fx-background-color: #3f51b5;" text="Download Files" textFill="WHITE">
+                  <Button fx:id="download" layoutX="14.0" layoutY="381.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="164.0" style="-fx-background-color: #3f51b5;" styleClass="button1" stylesheets="@../application.css" text="Download Files" textFill="WHITE">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button fx:id="submit" layoutX="428.0" layoutY="416.0" mnemonicParsing="false" onAction="#submit" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: #4CAF50; -fx-font-weight: bold;" text="Submit" textFill="WHITE">
+                  <Button fx:id="submit" layoutX="428.0" layoutY="416.0" mnemonicParsing="false" onAction="#submit" prefHeight="40.0" prefWidth="112.0" styleClass="submit" stylesheets="@../application.css" text="Submit" textFill="WHITE">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -96,7 +96,7 @@
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </Label>
-                  <Button fx:id="upload" layoutX="14.0" layoutY="428.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="164.0" style="-fx-background-color: #3f51b5;" text="Upload Files" textFill="WHITE">
+                  <Button fx:id="upload" layoutX="14.0" layoutY="428.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="164.0" style="-fx-background-color: #3f51b5;" styleClass="button1" stylesheets="@../application.css" text="Upload Files" textFill="WHITE">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>

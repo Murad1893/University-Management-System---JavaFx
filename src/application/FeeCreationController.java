@@ -72,15 +72,11 @@ public class FeeCreationController implements Initializable{
     @FXML
     private RadioButton unpaid;
 	
-	
-
-	
- 
 
     @FXML
     private Button UpdDel;
-
-
+    @FXML
+    private Button Delete;
     @FXML
     private Button View;
 
@@ -171,11 +167,60 @@ public class FeeCreationController implements Initializable{
 		
 	}
 	
+	boolean searchstudent() {
+		String query = "SELECT * FROM `studentfee` WHERE `StdID` LIKE '" + studid.getText() + "'";
+			
+		try {
+			ResultSet rs = con.createStatement().executeQuery(query);
+			
+			if(!rs.isBeforeFirst()) {
+				return false;
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return true;	
+		
+	}
 	
-	
+	public void DeleteStudentFeeRecord(ActionEvent e) {
+		
+		if(!searchstudent()) {
+			error.setContentText("Record not found!");
+			error.showAndWait();
+			return;
+		}
+		
+		String query = "DELETE FROM `studentfee` WHERE `StdID` = ? AND `DueDate` = ?";
+		PreparedStatement ps = null;
+		
+		try {
+			ps = con.prepareStatement(query);
+
+			ps.setString(1, studid.getText());
+			ps.setString(2, duedate1.getValue().toString());
+
+			ps.execute();
+			ViewStudentRecord(e);
+			
+		} 
+		catch (Exception e1) {
+			// TODO Auto-generated catch block
+			error.setContentText(e1.getMessage());
+			error.showAndWait();
+		}
+	}
 	
 	public void UpdateStudentRecord(ActionEvent e) {
 
+		
+		if(!searchstudent()) {
+			error.setContentText("Record not found!");
+			error.showAndWait();
+			return;
+		}
 		
 		String query = "UPDATE `studentfee` SET  `Status` = ? where `StdID` LIKE ? and `DueDate` LIKE ?";
 		
@@ -229,14 +274,17 @@ public class FeeCreationController implements Initializable{
 	
 	}
 		
-	
-	
 	public void RefreshRecord(ActionEvent e) {
 		studid.clear();
 		paid.setSelected(false);
 		unpaid.setSelected(false);
-		duedate.setValue(null);
 		duedate1.setValue(null);
+		defaultlabel();
+
+	}
+	
+	public void RefreshRecord1(ActionEvent e) {
+		duedate.setValue(null);
 		defaultlabel();
 
 	}

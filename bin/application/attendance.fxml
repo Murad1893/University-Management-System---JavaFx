@@ -65,7 +65,7 @@
                   </Label>
                </children>
             </AnchorPane>
-            <Label layoutX="14.0" layoutY="66.0" prefHeight="30.0" prefWidth="285.0" style="-fx-font-weight: bold;" text="Computer Architecture">
+            <Label fx:id="course_label" alignment="CENTER" layoutX="14.0" layoutY="66.0" prefHeight="30.0" prefWidth="285.0" style="-fx-font-weight: bold;">
                <font>
                   <Font size="20.0" />
                </font>

@@ -10,50 +10,62 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="940.0" prefWidth="1288.0" style="-fx-background-color: #f1f2f8;" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AnnouncementController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="929.0" prefWidth="1288.0" style="-fx-background-color: #f1f2f8;" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AnnouncementController">
    <children>
-      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="921.0" prefWidth="1274.0" style="-fx-background-color: white;">
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="901.0" prefWidth="1274.0" style="-fx-background-color: white;">
          <children>
-            <BorderPane fx:id="ap" layoutX="3.0" layoutY="77.0" prefHeight="432.0" prefWidth="1206.0" style="-fx-background-color: white;">
+            <BorderPane fx:id="ap" layoutX="3.0" layoutY="77.0" prefHeight="412.0" prefWidth="1207.0" style="-fx-background-color: white;">
                <bottom>
                   <Line endX="904.0" startX="-302.0" stroke="#3f51b5" BorderPane.alignment="CENTER" />
                </bottom>
             </BorderPane>
-            <Button layoutX="31.0" layoutY="60.0" mnemonicParsing="false" onAction="#AddAnnouncement" prefHeight="51.0" prefWidth="204.0" style="-fx-background-color: #3f51b5; -fx-font-size: 12px;" styleClass="button1" stylesheets="@application.css" text="Add Announcement">
+            <Button layoutX="31.0" layoutY="60.0" mnemonicParsing="false" onAction="#AddAnnouncement" prefHeight="51.0" prefWidth="204.0" style="-fx-background-color: #3f51b5; -fx-font-size: 12px;" styleClass="button1" stylesheets="@application.css" text="   Add Announcement">
                <cursor>
                   <Cursor fx:constant="HAND" />
-               </cursor></Button>
-            <Button fx:id="Alter" layoutX="254.0" layoutY="60.0" mnemonicParsing="false" onAction="#AlterAnnouncement" prefHeight="51.0" prefWidth="214.0" style="-fx-background-color: #3f51b5; -FX-FONT-SIZE: 12PX;" styleClass="button1" stylesheets="@application.css" text="Alter Announcement">
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="22" />
+               </graphic></Button>
+            <Button fx:id="Alter" layoutX="254.0" layoutY="60.0" mnemonicParsing="false" onAction="#AlterAnnouncement" prefHeight="51.0" prefWidth="214.0" style="-fx-background-color: #3f51b5; -FX-FONT-SIZE: 12PX;" styleClass="button1" stylesheets="@application.css" text="   Alter Announcement">
                <cursor>
                   <Cursor fx:constant="HAND" />
-               </cursor></Button>
-            <BorderPane fx:id="resource" layoutX="3.0" layoutY="543.0" prefHeight="363.0" prefWidth="1206.0" style="-fx-background-color: white;">
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="PENCIL_SQUARE_ALT" size="22" text="" />
+               </graphic></Button>
+            <BorderPane fx:id="resource" layoutX="3.0" layoutY="532.0" prefHeight="373.0" prefWidth="1207.0" style="-fx-background-color: white;">
                <bottom>
                   <Line endX="904.0" startX="-302.0" stroke="#3f51b5" BorderPane.alignment="CENTER" />
                </bottom>
             </BorderPane>
-            <Button layoutX="31.0" layoutY="525.0" mnemonicParsing="false" onAction="#UploadAssignment" prefHeight="51.0" prefWidth="204.0" style="-fx-background-color: #3f51b5; -fx-font-size: 12px;" styleClass="button1" stylesheets="@application.css" text="Upload Assignment">
+            <Button layoutX="31.0" layoutY="498.0" mnemonicParsing="false" onAction="#UploadAssignment" prefHeight="51.0" prefWidth="204.0" style="-fx-background-color: #3f51b5; -fx-font-size: 12px;" styleClass="button1" stylesheets="@application.css" text="   Upload Assignment">
                <cursor>
                   <Cursor fx:constant="HAND" />
-               </cursor></Button>
-            <Button fx:id="Alter1" layoutX="254.0" layoutY="524.0" mnemonicParsing="false" onAction="#UploadResource" prefHeight="51.0" prefWidth="214.0" style="-fx-background-color: #3f51b5; -fx-font-size: 12px;" styleClass="button1" stylesheets="@application.css" text="Upload Resource">
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="UPLOAD" size="22" />
+               </graphic></Button>
+            <Button fx:id="Alter1" layoutX="254.0" layoutY="497.0" mnemonicParsing="false" onAction="#UploadResource" prefHeight="51.0" prefWidth="214.0" style="-fx-background-color: #3f51b5; -fx-font-size: 12px;" styleClass="button1" stylesheets="@application.css" text="   Upload Resource">
                <cursor>
                   <Cursor fx:constant="HAND" />
-               </cursor></Button>
-            <Button fx:id="Alter11" layoutX="710.0" layoutY="523.0" mnemonicParsing="false" onAction="#AlterResource" prefHeight="51.0" prefWidth="214.0" style="-fx-background-color: #3f51b5; -fx-font-size: 12px;" styleClass="button1" stylesheets="@application.css" text="Update Resource">
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CLOUD_UPLOAD" size="22" />
+               </graphic></Button>
+            <Button fx:id="Alter11" layoutX="710.0" layoutY="496.0" mnemonicParsing="false" onAction="#AlterResource" prefHeight="51.0" prefWidth="214.0" style="-fx-background-color: #3f51b5; -fx-font-size: 12px;" styleClass="button1" stylesheets="@application.css" text="   Update Resource">
                <cursor>
                   <Cursor fx:constant="HAND" />
-               </cursor></Button>
-            <Button fx:id="Alter12" layoutX="485.0" layoutY="523.0" mnemonicParsing="false" onAction="#AlterAssignment" prefHeight="51.0" prefWidth="214.0" style="-fx-background-color: #3f51b5; -fx-font-size: 12px;" styleClass="button1" stylesheets="@application.css" text="Update Assignment">
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="22" />
+               </graphic></Button>
+            <Button fx:id="Alter12" layoutX="485.0" layoutY="496.0" mnemonicParsing="false" onAction="#AlterAssignment" prefHeight="51.0" prefWidth="214.0" style="-fx-background-color: #3f51b5; -fx-font-size: 12px;" styleClass="button1" stylesheets="@application.css" text="   Update Assignment">
                <cursor>
                   <Cursor fx:constant="HAND" />
-               </cursor></Button>
-            <FontAwesomeIconView fill="WHITE" glyphName="CLOUD_UPLOAD" layoutX="261.0" layoutY="558.0" size="22" />
-            <FontAwesomeIconView fill="WHITE" glyphName="EDIT" layoutX="493.0" layoutY="557.0" size="22" />
-            <FontAwesomeIconView fill="WHITE" glyphName="FOLDER_OPEN_ALT" layoutX="717.0" layoutY="557.0" size="22" />
-            <FontAwesomeIconView fill="WHITE" glyphName="PENCIL_SQUARE_ALT" layoutX="259.0" layoutY="94.0" size="22" />
-            <FontAwesomeIconView fill="WHITE" glyphName="PLUS" layoutX="37.0" layoutY="95.0" size="22" />
-            <FontAwesomeIconView fill="WHITE" glyphName="UPLOAD" layoutX="39.0" layoutY="556.0" size="22" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="FOLDER_OPEN_ALT" size="22" />
+               </graphic></Button>
             <AnchorPane prefHeight="45.0" prefWidth="1274.0" style="-fx-background-color: #3f51b5;">
                <children>
                   <Label layoutX="14.0" layoutY="14.0" text="ANNOUNCEMENT" textFill="WHITE">

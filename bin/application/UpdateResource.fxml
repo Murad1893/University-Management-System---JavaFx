@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
@@ -9,20 +10,20 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="433.0" prefWidth="1206.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UpdateResource">
+<AnchorPane prefHeight="387.0" prefWidth="1206.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UpdateResource">
    <children>
-      <Label layoutX="48.0" layoutY="45.0" text="Enter Course" textFill="#002e62">
+      <Label layoutX="26.0" layoutY="18.0" text="Enter Course" textFill="#002e62">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="48.0" layoutY="112.0" text="Description" textFill="#002e62">
+      <Label layoutX="26.0" layoutY="85.0" text="Description" textFill="#002e62">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <TextArea fx:id="desc" layoutX="47.0" layoutY="149.0" prefHeight="175.0" prefWidth="1100.0" promptText="Enter Description" style="-fx-border-color: #002e62; -fx-border-radius: 0;" />
-      <Button fx:id="update" layoutX="938.0" layoutY="350.0" mnemonicParsing="false" onAction="#UpdateAssign" prefHeight="46.0" prefWidth="96.0" style="-fx-background-color: #4CAF50; -fx-font-weight: bold;" text="Update" textFill="WHITE">
+      <TextArea fx:id="desc" layoutX="25.0" layoutY="122.0" prefHeight="175.0" prefWidth="1100.0" promptText="Enter Description" style="-fx-border-color: #002e62; -fx-border-radius: 0;" />
+      <Button fx:id="update" layoutX="915.0" layoutY="308.0" mnemonicParsing="false" onAction="#UpdateAssign" prefHeight="46.0" prefWidth="96.0" styleClass="submit" stylesheets="@../application.css" text="Update" textFill="WHITE">
          <font>
             <Font size="17.0" />
          </font>
@@ -33,7 +34,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="delete" layoutX="1045.0" layoutY="350.0" mnemonicParsing="false" onAction="#DeleteAssign" prefHeight="46.0" prefWidth="96.0" style="-fx-background-color: #4CAF50; -fx-font-weight: bold;" text="Delete" textFill="WHITE">
+      <Button fx:id="delete" layoutX="1022.0" layoutY="308.0" mnemonicParsing="false" onAction="#DeleteAssign" prefHeight="46.0" prefWidth="96.0" styleClass="submit" stylesheets="@../application.css" text="Delete" textFill="WHITE">
          <font>
             <Font size="17.0" />
          </font>
@@ -44,22 +45,23 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <ComboBox fx:id="titles" layoutX="231.0" layoutY="78.0" onAction="#TitleComboBoxButton" prefHeight="25.0" prefWidth="562.0" promptText="Title">
+      <ComboBox fx:id="titles" layoutX="209.0" layoutY="51.0" onAction="#TitleComboBoxButton" prefHeight="25.0" prefWidth="562.0" promptText="Title">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></ComboBox>
-      <Label layoutX="231.0" layoutY="45.0" text="Choose Title" textFill="#002e62">
+      <Label layoutX="209.0" layoutY="18.0" text="Choose Title" textFill="#002e62">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <ComboBox fx:id="courses" layoutX="48.0" layoutY="78.0" onAction="#ComboBoxButton" prefWidth="150.0" promptText="Courses">
+      <ComboBox fx:id="courses" layoutX="26.0" layoutY="51.0" onAction="#ComboBoxButton" prefWidth="150.0" promptText="Courses">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></ComboBox>
-      <Button fx:id="upload" layoutX="819.0" layoutY="78.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Upload File">
+      <Button fx:id="upload" layoutX="797.0" layoutY="51.0" mnemonicParsing="false" opacity="0.71" prefHeight="25.0" prefWidth="150.0" styleClass="upload" stylesheets="@../application.css" text="Upload Files" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
+      <FontAwesomeIconView fill="WHITE" glyphName="PAPERCLIP" layoutX="819.0" layoutY="69.0" size="16" />
    </children>
 </AnchorPane>

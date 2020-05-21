@@ -150,7 +150,7 @@
                         </Label>
                         <Line endX="243.0" layoutX="126.0" layoutY="275.0" startX="-100.0" />
                         <Label fx:id="teachmailw" layoutX="23.0" layoutY="247.0" text="k173732@nu.edu.pk" />
-                        <Label layoutX="27.0" layoutY="290.0" text="Permenant Address" textFill="#002e62">
+                        <Label layoutX="27.0" layoutY="290.0" text="Permanent Address" textFill="#002e62">
                            <font>
                               <Font size="15.0" />
                            </font>

@@ -14,6 +14,8 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Line?>
@@ -24,79 +26,79 @@
    <children>
       <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="912.0" prefWidth="1272.0" style="-fx-background-color: white;">
          <children>
-            <ScrollPane layoutY="63.0" prefHeight="810.0" prefWidth="473.0" style="-fx-background-color: none; -fx-border-radius: none; -fx-border-color: #3f51b5;">
+            <ScrollPane layoutY="63.0" prefHeight="851.0" prefWidth="473.0" style="-fx-background-color: none; -fx-border-radius: none; -fx-border-color: #3f51b5;">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1446.0" prefWidth="464.0" style="-fx-border-radius: none; -fx-border-color: none; -fx-background-color: white;">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1635.0" prefWidth="464.0" style="-fx-border-radius: none; -fx-border-color: none; -fx-background-color: white;">
                      <children>
-                        <Text fx:id="idlabel" fill="#002e62" layoutX="38.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Student ID" wrappingWidth="200.0" />
-                        <TextField fx:id="id" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="38.0" layoutY="126.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText=" Student ID" style="-fx-border-color: none; -fx-background-color: transparent;">
+                        <Text fx:id="idlabel" fill="#002e62" layoutX="46.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Student ID" wrappingWidth="200.0" />
+                        <TextField fx:id="id" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="46.0" layoutY="317.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText=" Student ID" style="-fx-border-color: none; -fx-background-color: transparent;">
                            <opaqueInsets>
                               <Insets right="3.0" />
                            </opaqueInsets>
                         </TextField>
-                        <Text fx:id="fnamelabel" fill="#002e62" layoutX="38.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="First Name" wrappingWidth="200.0" />
-                        <TextField fx:id="fname" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="38.0" layoutY="189.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="First Name" style="-fx-border-color: none; -fx-background-color: transparent;">
+                        <Text fx:id="fnamelabel" fill="#002e62" layoutX="46.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="First Name" wrappingWidth="200.0" />
+                        <TextField fx:id="fname" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="46.0" layoutY="380.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="First Name" style="-fx-border-color: none; -fx-background-color: transparent;">
                            <opaqueInsets>
                               <Insets right="3.0" />
                            </opaqueInsets>
                         </TextField>
-                        <Text fx:id="mnamelabel" fill="#002e62" layoutX="38.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Middle Name" wrappingWidth="200.0" />
-                        <TextField fx:id="mname" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="38.0" layoutY="252.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="Middle Name" style="-fx-border-color: none; -fx-background-color: transparent;">
+                        <Text fx:id="mnamelabel" fill="#002e62" layoutX="46.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Middle Name" wrappingWidth="200.0" />
+                        <TextField fx:id="mname" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="46.0" layoutY="443.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="Middle Name" style="-fx-border-color: none; -fx-background-color: transparent;">
                            <opaqueInsets>
                               <Insets right="3.0" />
                            </opaqueInsets>
                         </TextField>
-                        <Text fx:id="lnamelabel" fill="#002e62" layoutX="38.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Last Name" wrappingWidth="200.0" />
-                        <TextField fx:id="lname" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="38.0" layoutY="318.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="Last Name" style="-fx-border-color: none; -fx-background-color: transparent;">
+                        <Text fx:id="lnamelabel" fill="#002e62" layoutX="46.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Last Name" wrappingWidth="200.0" />
+                        <TextField fx:id="lname" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="46.0" layoutY="509.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="Last Name" style="-fx-border-color: none; -fx-background-color: transparent;">
                            <opaqueInsets>
                               <Insets right="3.0" />
                            </opaqueInsets>
                         </TextField>
-                        <Text fx:id="genderlabel" fill="#002e62" layoutX="38.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Gender" wrappingWidth="200.0" />
-                        <RadioButton fx:id="gender_1" layoutX="38.0" layoutY="386.0" mnemonicParsing="false" text="Male" textFill="#002e62">
+                        <Text fx:id="genderlabel" fill="#002e62" layoutX="46.0" layoutY="561.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Gender" wrappingWidth="200.0" />
+                        <RadioButton fx:id="gender_1" layoutX="46.0" layoutY="577.0" mnemonicParsing="false" text="Male" textFill="#002e62">
                            <toggleGroup>
                               <ToggleGroup fx:id="gender" />
                            </toggleGroup>
                         </RadioButton>
-                        <RadioButton fx:id="gender_2" layoutX="150.0" layoutY="386.0" mnemonicParsing="false" text="Female" textFill="#002e62" toggleGroup="$gender" />
-                        <Text fx:id="caddrlabel" fill="#002e62" layoutX="38.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Current Address" wrappingWidth="200.0" />
-                        <TextArea fx:id="caddr" layoutX="38.0" layoutY="451.0" prefHeight="94.0" prefWidth="365.0" promptText="Address" style="-fx-border-color: #002e62;" />
-                        <Text fx:id="paddrlabel" fill="#002e62" layoutX="35.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Permenant Address" wrappingWidth="200.0" />
-                        <TextArea fx:id="paddr" layoutX="36.0" layoutY="591.0" prefHeight="94.0" prefWidth="365.0" promptText="Address" style="-fx-border-color: #002e62;" />
-                        <Text fx:id="mobnolabel" fill="#002e62" layoutX="35.0" layoutY="713.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Mobile No" wrappingWidth="200.0" />
-                        <TextField fx:id="mobno" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="35.0" layoutY="725.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="+92xxx-xxx-xxxx" style="-fx-border-color: none; -fx-background-color: transparent;">
+                        <RadioButton fx:id="gender_2" layoutX="158.0" layoutY="577.0" mnemonicParsing="false" text="Female" textFill="#002e62" toggleGroup="$gender" />
+                        <Text fx:id="caddrlabel" fill="#002e62" layoutX="46.0" layoutY="630.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Current Address" wrappingWidth="200.0" />
+                        <TextArea fx:id="caddr" layoutX="46.0" layoutY="642.0" prefHeight="94.0" prefWidth="365.0" promptText="Address" style="-fx-border-color: #002e62;" />
+                        <Text fx:id="paddrlabel" fill="#002e62" layoutX="43.0" layoutY="766.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Permanent Address" wrappingWidth="200.0" />
+                        <TextArea fx:id="paddr" layoutX="44.0" layoutY="782.0" prefHeight="94.0" prefWidth="365.0" promptText="Address" style="-fx-border-color: #002e62;" />
+                        <Text fx:id="mobnolabel" fill="#002e62" layoutX="43.0" layoutY="904.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Mobile No" wrappingWidth="200.0" />
+                        <TextField fx:id="mobno" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="43.0" layoutY="916.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="+92xxx-xxx-xxxx" style="-fx-border-color: none; -fx-background-color: transparent;">
                            <opaqueInsets>
                               <Insets right="3.0" />
                            </opaqueInsets>
                         </TextField>
-                        <Text fx:id="hnolabel" fill="#002e62" layoutX="35.0" layoutY="778.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Home No (optional)" wrappingWidth="200.0" />
-                        <TextField fx:id="hno" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="35.0" layoutY="792.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="+92xxx-xxx-xxxx" style="-fx-border-color: none; -fx-background-color: transparent;">
+                        <Text fx:id="hnolabel" fill="#002e62" layoutX="43.0" layoutY="969.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Home No (optional)" wrappingWidth="200.0" />
+                        <TextField fx:id="hno" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="43.0" layoutY="983.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="+92xxx-xxx-xxxx" style="-fx-border-color: none; -fx-background-color: transparent;">
                            <opaqueInsets>
                               <Insets right="3.0" />
                            </opaqueInsets>
                         </TextField>
-                        <Text fx:id="altnolabel" fill="#002e62" layoutX="37.0" layoutY="844.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Alternative No (optional)" wrappingWidth="200.0" />
-                        <TextField fx:id="altno" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="34.0" layoutY="855.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="+92xxx-xxx-xxxx" style="-fx-border-color: none; -fx-background-color: transparent;">
+                        <Text fx:id="altnolabel" fill="#002e62" layoutX="45.0" layoutY="1035.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Alternative No (optional)" wrappingWidth="200.0" />
+                        <TextField fx:id="altno" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="42.0" layoutY="1046.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="+92xxx-xxx-xxxx" style="-fx-border-color: none; -fx-background-color: transparent;">
                            <opaqueInsets>
                               <Insets right="3.0" />
                            </opaqueInsets>
                         </TextField>
-                        <Text fx:id="emailhlabel" fill="#002e62" layoutX="35.0" layoutY="908.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Email (Personel)" wrappingWidth="200.0" />
-                        <TextField fx:id="emailh" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="35.0" layoutY="918.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="----------@gmail.com" style="-fx-border-color: none; -fx-background-color: transparent;">
+                        <Text fx:id="emailhlabel" fill="#002e62" layoutX="43.0" layoutY="1099.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Email (Personel)" wrappingWidth="200.0" />
+                        <TextField fx:id="emailh" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="43.0" layoutY="1109.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="----------@gmail.com" style="-fx-border-color: none; -fx-background-color: transparent;">
                            <opaqueInsets>
                               <Insets right="3.0" />
                            </opaqueInsets>
                         </TextField>
-                        <Text fx:id="cniclabel" fill="#002e62" layoutX="33.0" layoutY="1067.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="CNIC" wrappingWidth="200.0" />
-                        <TextField fx:id="cnic" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="33.0" layoutY="1077.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="CNIC" style="-fx-border-color: none; -fx-background-color: transparent;">
+                        <Text fx:id="cniclabel" fill="#002e62" layoutX="41.0" layoutY="1258.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="CNIC" wrappingWidth="200.0" />
+                        <TextField fx:id="cnic" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="41.0" layoutY="1268.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="CNIC" style="-fx-border-color: none; -fx-background-color: transparent;">
                            <opaqueInsets>
                               <Insets right="3.0" />
                            </opaqueInsets>
                         </TextField>
-                        <DatePicker fx:id="dob" editable="false" layoutX="33.0" layoutY="1150.0" prefHeight="48.0" prefWidth="373.0" style="-fx-border-color: #002e62; -fx-background-color: transparent;" />
-                        <Text fx:id="doblabel" fill="#002e62" layoutX="33.0" layoutY="1130.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Date Of Birth" wrappingWidth="200.0" />
-                        <Text fx:id="batchlabel" fill="#002e62" layoutX="33.0" layoutY="1227.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Batch" wrappingWidth="200.0" />
-                        <TextField fx:id="batch" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="30.0" layoutY="1237.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="(2017-2019)" style="-fx-border-color: none; -fx-background-color: transparent;">
+                        <DatePicker fx:id="dob" editable="false" layoutX="41.0" layoutY="1341.0" prefHeight="48.0" prefWidth="373.0" style="-fx-border-color: #002e62; -fx-background-color: transparent;" />
+                        <Text fx:id="doblabel" fill="#002e62" layoutX="41.0" layoutY="1321.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Date Of Birth" wrappingWidth="200.0" />
+                        <Text fx:id="batchlabel" fill="#002e62" layoutX="41.0" layoutY="1418.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Batch" wrappingWidth="200.0" />
+                        <TextField fx:id="batch" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="38.0" layoutY="1428.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="(2017-2019)" style="-fx-border-color: none; -fx-background-color: transparent;">
                            <opaqueInsets>
                               <Insets right="3.0" />
                            </opaqueInsets>
@@ -114,25 +116,25 @@
                               </Button>
                            </children>
                         </AnchorPane>
-                        <Text fx:id="dcodelabel" fill="#002e62" layoutX="31.0" layoutY="1304.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Department Code" wrappingWidth="180.0" />
-                        <TextField fx:id="dcode" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="28.0" layoutY="1314.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="1,2,3...." style="-fx-border-color: none; -fx-background-color: transparent;">
+                        <Text fx:id="dcodelabel" fill="#002e62" layoutX="39.0" layoutY="1495.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Department Code" wrappingWidth="180.0" />
+                        <TextField fx:id="dcode" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="36.0" layoutY="1505.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="1,2,3...." style="-fx-border-color: none; -fx-background-color: transparent;">
                            <opaqueInsets>
                               <Insets right="3.0" />
                            </opaqueInsets>
                         </TextField>
-                        <Text fx:id="secidlabel" fill="#002e62" layoutX="31.0" layoutY="1384.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Section ID" wrappingWidth="118.98307228088379" />
-                        <TextField fx:id="secid" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" editable="false" layoutX="28.0" layoutY="1394.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" style="-fx-border-color: none; -fx-background-color: transparent;">
+                        <Text fx:id="secidlabel" fill="#002e62" layoutX="39.0" layoutY="1575.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Section ID" wrappingWidth="118.98307228088379" />
+                        <TextField fx:id="secid" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" editable="false" layoutX="36.0" layoutY="1585.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" style="-fx-border-color: none; -fx-background-color: transparent;">
                            <opaqueInsets>
                               <Insets right="3.0" />
                            </opaqueInsets>
                         </TextField>
-                        <Text fx:id="emailwlabel" fill="#002e62" layoutX="34.0" layoutY="983.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Email (Work)" wrappingWidth="118.98307228088379" />
-                        <TextField fx:id="emailw" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="34.0" layoutY="993.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="----------@gmail.com" style="-fx-border-color: none; -fx-background-color: transparent;">
+                        <Text fx:id="emailwlabel" fill="#002e62" layoutX="42.0" layoutY="1174.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #002e62;" text="Email (Work)" wrappingWidth="118.98307228088379" />
+                        <TextField fx:id="emailw" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="42.0" layoutY="1184.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="----------@gmail.com" style="-fx-border-color: none; -fx-background-color: transparent;">
                            <opaqueInsets>
                               <Insets right="3.0" />
                            </opaqueInsets>
                         </TextField>
-                        <Button fx:id="AddImage" layoutX="291.0" layoutY="88.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" text="Add Image">
+                        <Button fx:id="AddImage" layoutX="171.0" layoutY="266.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" text="Add Image">
                            <graphic>
                               <FontAwesomeIconView glyphName="IMAGE" />
                            </graphic>
@@ -140,19 +142,29 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Line endX="138.0" layoutX="280.0" layoutY="152.0" startX="-235.99996948242188" stroke="#002e62" />
-                        <Line endX="138.0" layoutX="280.0" layoutY="215.0" startX="-235.99996948242188" stroke="#002e62" />
-                        <Line endX="138.0" layoutX="280.0" layoutY="278.0" startX="-235.99996948242188" stroke="#002e62" />
-                        <Line endX="138.0" layoutX="280.0" layoutY="344.0" startX="-235.99996948242188" stroke="#002e62" />
-                        <Line endX="138.0" layoutX="280.0" layoutY="755.0" startX="-235.99996948242188" stroke="#002e62" />
-                        <Line endX="138.0" layoutX="280.0" layoutY="821.0" startX="-235.99996948242188" stroke="#002e62" />
-                        <Line endX="138.0" layoutX="280.0" layoutY="887.0" startX="-235.99996948242188" stroke="#002e62" />
-                        <Line endX="138.0" layoutX="280.0" layoutY="947.0" startX="-235.99996948242188" stroke="#002e62" />
-                        <Line endX="138.0" layoutX="280.0" layoutY="1019.0" startX="-235.99996948242188" stroke="#002e62" />
-                        <Line endX="138.0" layoutX="280.0" layoutY="1103.0" startX="-235.99996948242188" stroke="#002e62" />
-                        <Line endX="138.0" layoutX="280.0" layoutY="1267.0" startX="-235.99996948242188" stroke="#002e62" />
-                        <Line endX="138.0" layoutX="280.0" layoutY="1343.0" startX="-235.99996948242188" stroke="#002e62" />
-                        <Line endX="138.0" layoutX="280.0" layoutY="1426.0" startX="-235.99996948242188" stroke="#002e62" />
+                        <Line endX="138.0" layoutX="288.0" layoutY="343.0" startX="-235.99996948242188" stroke="#002e62" />
+                        <Line endX="138.0" layoutX="288.0" layoutY="406.0" startX="-235.99996948242188" stroke="#002e62" />
+                        <Line endX="138.0" layoutX="288.0" layoutY="469.0" startX="-235.99996948242188" stroke="#002e62" />
+                        <Line endX="138.0" layoutX="288.0" layoutY="535.0" startX="-235.99996948242188" stroke="#002e62" />
+                        <Line endX="138.0" layoutX="288.0" layoutY="946.0" startX="-235.99996948242188" stroke="#002e62" />
+                        <Line endX="138.0" layoutX="288.0" layoutY="1012.0" startX="-235.99996948242188" stroke="#002e62" />
+                        <Line endX="138.0" layoutX="288.0" layoutY="1078.0" startX="-235.99996948242188" stroke="#002e62" />
+                        <Line endX="138.0" layoutX="288.0" layoutY="1138.0" startX="-235.99996948242188" stroke="#002e62" />
+                        <Line endX="138.0" layoutX="288.0" layoutY="1210.0" startX="-235.99996948242188" stroke="#002e62" />
+                        <Line endX="138.0" layoutX="288.0" layoutY="1294.0" startX="-235.99996948242188" stroke="#002e62" />
+                        <Line endX="138.0" layoutX="288.0" layoutY="1458.0" startX="-235.99996948242188" stroke="#002e62" />
+                        <Line endX="138.0" layoutX="288.0" layoutY="1534.0" startX="-235.99996948242188" stroke="#002e62" />
+                        <Line endX="138.0" layoutX="288.0" layoutY="1617.0" startX="-235.99996948242188" stroke="#002e62" />
+                        <ImageView fx:id="studentimage" fitHeight="175.0" fitWidth="171.0" layoutX="148.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../unknown.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="RemoveImage" layoutX="288.0" layoutY="80.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="30.0" style="-fx-background-color: none;" styleClass="close" stylesheets="@../application.css" text="X">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Button>
                      </children>
                   </AnchorPane>
               </content>

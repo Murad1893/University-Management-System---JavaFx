@@ -136,9 +136,9 @@
                   <Image url="file:Student.png" />
                </image>
             </ImageView>
-            <Button layoutX="1447.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="52.0" styleClass="helpButton" text="Help">
+            <Button fx:id="helpbtn" layoutX="1447.0" layoutY="39.0" mnemonicParsing="false" onAction="#LoadHelpGuide" prefHeight="29.0" prefWidth="52.0" styleClass="helpButton">
                <graphic>
-                  <FontAwesomeIconView glyphName="QUESTION" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="QUESTION_CIRCLE" size="35" />
                </graphic>
                <cursor>
                   <Cursor fx:constant="HAND" />

@@ -2,7 +2,10 @@ package application;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -35,6 +38,8 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
@@ -179,7 +184,12 @@ public class AdminControllerStaff implements Initializable{
 	private Button ViewAll;
 	@FXML
 	private Button AddImage;
-
+	@FXML
+	private Button RemoveImage;
+	
+	@FXML
+	private ImageView staffimage;
+	
 	ObservableList<Staff> stdlist = FXCollections.observableArrayList();
 
 	FileChooser filechooser = new FileChooser();
@@ -203,8 +213,18 @@ public class AdminControllerStaff implements Initializable{
 				file = filechooser.showOpenDialog(AddImage.getScene().getWindow());
 				if(file!=null) {
 					AddImage.setText(file.getName());
+					staffimage.setImage(new Image("file:" + file.getAbsolutePath(), 171, 175, false, false));
 				}
 
+			}
+		});
+		
+		RemoveImage.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent event) {
+				AddImage.setText("Add Image");
+				staffimage.setImage(new Image("file:unknown.jpg", 171, 175, false, false));
+				file = null;	
 			}
 		});
 
@@ -241,6 +261,46 @@ public class AdminControllerStaff implements Initializable{
 						job.setText(table.getSelectionModel().getSelectedItem().getJobtitle());
 						salary.setText(table.getSelectionModel().getSelectedItem().getSalary());
 						deptno.setText(table.getSelectionModel().getSelectedItem().getDeptcode());
+						AddImage.setText("Add Image");
+						
+try {
+							
+							String query = "select Image from `academic_staff` where `StaffID` LIKE '" + table.getSelectionModel().getSelectedItem().getId() + "'";	
+							
+							ResultSet rs = con.createStatement().executeQuery(query);
+						
+							if(!rs.isBeforeFirst()) {
+								throw new SQLException();			
+							}
+							rs.next();
+							InputStream is = rs.getBinaryStream("Image");
+							
+							OutputStream os = new FileOutputStream(new File("staffformphoto.jpg"));
+							byte[] content = new byte[1024];
+							
+							int size = 0;
+
+							if(is != null) {
+							
+							while((size = is.read(content)) != -1) {		
+								os.write(content,0,size);
+								
+							}
+							os.close();
+							is.close();
+							
+							Image image = new Image("file:staffformphoto.jpg",171,175,false,false);
+							staffimage.setImage(image);
+							}
+							else {
+								staffimage.setImage(new Image("file:unknown.jpg"));
+							}
+						}
+						
+						catch (SQLException | IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
 					}
 				}
 				catch(NullPointerException e) {
@@ -278,6 +338,7 @@ public class AdminControllerStaff implements Initializable{
 			gender_2.setSelected(false);
 			dob.setValue(null);
 			AddImage.setText("Add Image");
+			staffimage.setImage(new Image("file:unknown.jpg",171,175,false,false));
 		}
 
 	public void defaultlabel()

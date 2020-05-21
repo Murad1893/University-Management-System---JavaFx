@@ -83,9 +83,9 @@
                   <Image url="file:admin.png" />
                </image>
             </ImageView>
-            <Button layoutX="1447.0" layoutY="2.0" mnemonicParsing="false" styleClass="helpButton" text="Help">
+            <Button layoutX="1439.0" layoutY="39.0" mnemonicParsing="false" styleClass="helpButton">
                <graphic>
-                  <FontAwesomeIconView glyphName="QUESTION" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="QUESTION_CIRCLE" size="35" />
                </graphic>
                <cursor>
                   <Cursor fx:constant="HAND" />

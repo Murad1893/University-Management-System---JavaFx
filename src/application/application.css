@@ -45,10 +45,6 @@
     -fx-border-width:3px;
 }
 
-.close:hover{
-	-fx-text-fill: #d50000;
-}
-
 #adminPageHeader{
 	-fx-background-color:  #355c7d;
 }
@@ -73,7 +69,7 @@
 }
 
 #terminate:hover{
-	-fx-background-color:  #d50000;
+	-fx-background-color:  #d50000 #f44336;
 	-fx-font-weight: bold;
 }
 

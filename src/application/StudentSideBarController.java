@@ -1,5 +1,6 @@
 package application;
 
+import java.awt.Desktop;
 import java.io.BufferedReader;
 import java.io.File;
 
@@ -8,6 +9,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.sql.Connection;
 
@@ -65,6 +67,8 @@ public class StudentSideBarController implements Initializable {
 	    @FXML
 	    private Button sbtn8;
 	    
+	    @FXML
+	    private Button helpbtn;
 	    
 	    @FXML
 	    private BorderPane pa;
@@ -75,6 +79,16 @@ public class StudentSideBarController implements Initializable {
 	    @FXML
 		private ImageView studentimage;
 	     
+	    public void LoadHelpGuide(ActionEvent e) {
+	    	try {
+	           Desktop.getDesktop().browse(new URL("http://localhost/help/student.html").toURI());
+	        } catch (IOException e1) {
+	            e1.printStackTrace();
+	        } catch (URISyntaxException e1) {
+	            e1.printStackTrace();
+	        }
+	    }
+	    
 	    public void ShowProfile(ActionEvent e)
 	    {LoadPane("studentdashboard");}
 	    

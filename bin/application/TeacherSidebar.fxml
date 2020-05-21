@@ -23,7 +23,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="tbtn2" layoutY="427.0" mnemonicParsing="false" onAction="#TeachAddAttendence" prefHeight="59.0" prefWidth="202.0" style="-fx-font-size: 15;" styleClass="dashboardButton" stylesheets="@../application.css" text="Attendence" textFill="WHITE">
+            <Button fx:id="tbtn2" layoutY="427.0" mnemonicParsing="false" onAction="#TeachAddAttendence" prefHeight="59.0" prefWidth="202.0" style="-fx-font-size: 15;" styleClass="dashboardButton" stylesheets="@../application.css" text="Attendance" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -109,9 +109,9 @@
                   <Image url="file:Student.png" />
                </image>
             </ImageView>
-            <Button layoutX="1447.0" layoutY="2.0" mnemonicParsing="false" styleClass="helpButton" text="Help">
+            <Button fx:id="helpbtn" layoutX="1445.0" layoutY="39.0" mnemonicParsing="false" onAction="#LoadHelpGuide" styleClass="helpButton">
                <graphic>
-                  <FontAwesomeIconView glyphName="QUESTION" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="QUESTION_CIRCLE" size="35" />
                </graphic>
                <cursor>
                   <Cursor fx:constant="HAND" />

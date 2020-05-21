@@ -99,13 +99,16 @@
                   <Image url="file:admin.png" />
                </image>
             </ImageView>
-            <Button layoutX="1478.0" layoutY="-1.0" mnemonicParsing="false" styleClass="helpButton" text="Help">
+            <Button fx:id="helpbtn" layoutX="1466.0" layoutY="35.0" mnemonicParsing="false" onAction="#LoadHelpGuide" prefHeight="51.0" prefWidth="59.0" styleClass="helpButton" textFill="WHITE">
                <graphic>
-                  <FontAwesomeIconView glyphName="QUESTION" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="QUESTION_CIRCLE" size="35" />
                </graphic>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
+               <font>
+                  <Font size="22.0" />
+               </font>
             </Button>
          </children>
       </AnchorPane>

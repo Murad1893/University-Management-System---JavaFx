@@ -17,7 +17,7 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></DatePicker>
-      <Button fx:id="upload" layoutX="326.0" layoutY="70.0" mnemonicParsing="false" opacity="0.71" prefHeight="25.0" prefWidth="174.0" style="-fx-background-color: #002e62;" text="Upload Files" textFill="WHITE">
+      <Button fx:id="upload" layoutX="326.0" layoutY="70.0" mnemonicParsing="false" opacity="0.71" prefHeight="25.0" prefWidth="174.0" styleClass="upload" stylesheets="@../application.css" text="Upload Files" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
@@ -25,7 +25,7 @@
       <TextField fx:id="title" layoutX="24.0" layoutY="131.0" prefHeight="25.0" prefWidth="683.0" style="-fx-border-color: #002e62;" />
       <Label layoutX="24.0" layoutY="172.0" style="-fx-font-weight: bold; -fx-font-size: 15px;" text="Description" textFill="#002e62" />
       <TextArea fx:id="desc" layoutX="24.0" layoutY="195.0" prefHeight="91.0" prefWidth="1158.0" style="-fx-border-color: #002e62;" />
-      <Button fx:id="submit" layoutX="1086.0" layoutY="301.0" mnemonicParsing="false" onAction="#submit" prefHeight="46.0" prefWidth="96.0" style="-fx-background-color: #4CAF50; -fx-font-weight: bold; -fx-font-size: 15PX;" text="Submit" textFill="WHITE">
+      <Button fx:id="submit" layoutX="1086.0" layoutY="301.0" mnemonicParsing="false" onAction="#submit" prefHeight="46.0" prefWidth="96.0" styleClass="submit" stylesheets="@../application.css" text="Submit" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>

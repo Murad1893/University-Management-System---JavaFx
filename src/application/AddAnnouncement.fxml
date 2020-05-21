@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="433.0" prefWidth="1206.0" style="-fx-background-color: white;" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddAnnounceController">
+<AnchorPane prefHeight="433.0" prefWidth="1206.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddAnnounceController">
    <children>
       <Label layoutX="44.0" layoutY="44.0" text="Title" textFill="#002e62">
          <font>
@@ -24,7 +24,7 @@
          </font>
       </Label>
       <TextArea fx:id="announcement" layoutX="47.0" layoutY="149.0" prefHeight="175.0" prefWidth="1100.0" promptText="Enter Announcement" style="-fx-border-color: #002e62; -fx-border-radius: 0;" />
-      <Button fx:id="submit" layoutX="1049.0" layoutY="350.0" mnemonicParsing="false" onAction="#Submit" prefHeight="46.0" prefWidth="96.0" style="-fx-background-color: #4CAF50; -fx-font-weight: bold;" text="Submit" textFill="WHITE">
+      <Button fx:id="submit" layoutX="1049.0" layoutY="350.0" mnemonicParsing="false" onAction="#Submit" prefHeight="46.0" prefWidth="96.0" styleClass="submit" stylesheets="@../application.css" text="Submit" textFill="WHITE">
          <font>
             <Font size="17.0" />
          </font>

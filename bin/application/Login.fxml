@@ -35,7 +35,7 @@
             <Font size="16.0" />
          </font>
          <cursor>
-            <Cursor fx:constant="CLOSED_HAND" />
+            <Cursor fx:constant="HAND" />
          </cursor></Button>
       <ImageView fitHeight="74.0" fitWidth="99.0" layoutX="569.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -50,14 +50,6 @@
       <FontAwesomeIconView fill="WHITE" glyphName="SIGN_OUT" layoutX="550.0" layoutY="387.0" size="20" />
       <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="501.0" layoutY="199.0" size="16" />
       <FontAwesomeIconView fill="WHITE" glyphName="KEY" layoutX="496.0" layoutY="269.0" size="16" />
-      <Button layoutX="747.0" layoutY="-3.0" mnemonicParsing="false" styleClass="helpButton" text="Help">
-         <graphic>
-            <FontAwesomeIconView glyphName="QUESTION" />
-         </graphic>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
       
    </children>
 </AnchorPane>

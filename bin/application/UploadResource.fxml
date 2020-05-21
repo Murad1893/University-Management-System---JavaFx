@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="361.0" prefWidth="1206.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UploadResourceController">
    <children>
-      <Button fx:id="upload" layoutX="159.0" layoutY="41.0" mnemonicParsing="false" opacity="0.71" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #002e62;" text="Upload Files" textFill="WHITE">
+      <Button fx:id="upload" alignment="CENTER" layoutX="159.0" layoutY="41.0" mnemonicParsing="false" opacity="0.71" prefHeight="25.0" prefWidth="150.0" styleClass="upload" stylesheets="@../application.css" text="Upload Files" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
@@ -20,7 +20,7 @@
       <TextField fx:id="title" layoutX="24.0" layoutY="98.0" prefHeight="25.0" prefWidth="683.0" style="-fx-border-color: #002e62;" />
       <Label layoutX="24.0" layoutY="139.0" style="-fx-font-weight: BOLD;" text="Description" textFill="#002e62" />
       <TextArea fx:id="desc" layoutX="24.0" layoutY="162.0" prefHeight="128.0" prefWidth="1158.0" style="-fx-border-color: #002e62;" />
-      <Button fx:id="submit" layoutX="1086.0" layoutY="301.0" mnemonicParsing="false" onAction="#submit" prefHeight="46.0" prefWidth="96.0" style="-fx-background-color: #4CAF50;" text="Submit" textFill="WHITE">
+      <Button fx:id="submit" layoutX="1086.0" layoutY="301.0" mnemonicParsing="false" onAction="#submit" prefHeight="46.0" prefWidth="96.0" styleClass="submit" stylesheets="@../application.css" text="Submit" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -32,5 +32,6 @@
             <Cursor fx:constant="HAND" />
          </cursor></ComboBox>
       <FontAwesomeIconView fill="WHITE" glyphName="PAPERCLIP" layoutX="163.0" layoutY="88.0" size="16" />
+      <FontAwesomeIconView fill="WHITE" glyphName="PAPERCLIP" layoutX="182.0" layoutY="59.0" size="16" />
    </children>
 </AnchorPane>

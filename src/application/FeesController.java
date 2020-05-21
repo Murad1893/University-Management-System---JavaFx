@@ -122,6 +122,28 @@ public class FeesController implements Initializable{
 		
 	}
 	
+	boolean searchdept(){
+		try {
+			String query = "select * from `department` where `DeptCode` LIKE ?";
+
+			PreparedStatement ps = con.prepareStatement(query);
+			ps.setString(1, deptid.getText());
+			ps.execute();
+
+			ResultSet rs = ps.getResultSet();
+
+			if(!rs.isBeforeFirst()) {
+				throw new SQLException();
+			}
+			else{
+				return true;
+			}
+		}
+		catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			return false;
+		}
+	}
 	
 	public void InsertStudentRecord(ActionEvent e) {
 
@@ -166,8 +188,16 @@ public class FeesController implements Initializable{
 		}
 		catch (Exception e1) {
 			// TODO Auto-generated catch block
-			error.setContentText(e1.getMessage());
-			error.showAndWait();
+			String s = e1.getMessage();
+		
+			if(s.contains("department")) {
+				error.setContentText("Department does not exist!");
+				error.showAndWait();
+			}
+			else if(s.contains("Duplicate")) {
+				error.setContentText("Department with these entries already exists!");
+				error.showAndWait();
+			}
 		}
 		}
 	}
@@ -175,7 +205,6 @@ public class FeesController implements Initializable{
 	public void UpdateStudentRecord(ActionEvent e) {
 	
 		String query = "UPDATE `fee` SET  `Fees` = ? where `DeptCode` LIKE ?";
-		
 		
 		defaultlabel();
 		PreparedStatement ps = null;
@@ -199,8 +228,12 @@ public class FeesController implements Initializable{
 
 		
 		try {
+			
+			if(!searchdept()) {
+				throw new Exception();
+			}
+			
 			ps = con.prepareStatement(query);
-
 			
 			ps.setString(2, deptid.getText());
 			ps.setString(1, cost.getText());		
@@ -211,7 +244,7 @@ public class FeesController implements Initializable{
 		} 
 		catch (Exception e1) {
 			// TODO Auto-generated catch block
-			error.setContentText(e1.getMessage());
+			error.setContentText("Deparment does not exist!");
 			error.showAndWait();
 		}
 		}
@@ -225,6 +258,11 @@ public class FeesController implements Initializable{
 		PreparedStatement ps = null;
 		
 		try {
+			
+			if(!searchdept()) {
+				throw new SQLException();
+			}
+			
 			ps = con.prepareStatement(query);
 			
 			ps.setString(1, deptid.getText());
@@ -236,7 +274,7 @@ public class FeesController implements Initializable{
 		} 
 		catch (SQLException e1) {
 			// TODO Auto-generated catch block
-			error.setContentText(e1.getMessage());
+			error.setContentText("Department does not exist!");
 			error.showAndWait();
 		}
 		

@@ -71,7 +71,7 @@
             </TableView>
          </children>
       </AnchorPane>
-      <Button fx:id="UpdDel" layoutX="729.0" layoutY="787.0" mnemonicParsing="false" onAction="#UpdateStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #2e7d32; -fx-border-radius: 0; -fx-border-color: #18202c;" text="UPDATE" textFill="WHITE">
+      <Button fx:id="UpdDel" layoutX="673.0" layoutY="787.0" mnemonicParsing="false" onAction="#UpdateStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #2e7d32; -fx-border-radius: 0; -fx-border-color: #18202c;" styleClass="crudButton" text="UPDATE" textFill="WHITE">
          <font>
             <Font name="Yu Gothic UI Bold" size="12.0" />
          </font>
@@ -79,7 +79,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="View" layoutX="895.0" layoutY="787.0" mnemonicParsing="false" onAction="#SearchStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #00838f; -fx-border-radius: 0; -fx-border-color: #18202c;" text="VIEW" textFill="WHITE">
+      <Button fx:id="View" layoutX="919.0" layoutY="787.0" mnemonicParsing="false" onAction="#SearchStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #00838f; -fx-border-radius: 0; -fx-border-color: #18202c;" styleClass="crudButton" text="VIEW" textFill="WHITE">
          <font>
             <Font name="Yu Gothic UI Bold" size="12.0" />
          </font>
@@ -87,7 +87,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="ViewAll" layoutX="1062.0" layoutY="787.0" mnemonicParsing="false" onAction="#ViewStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #00695c; -fx-border-radius: 0; -fx-border-color: #18202c;" text="VIEW ALL" textFill="WHITE">
+      <Button fx:id="ViewAll" layoutX="1062.0" layoutY="787.0" mnemonicParsing="false" onAction="#ViewStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #00695c; -fx-border-radius: 0; -fx-border-color: #18202c;" styleClass="crudButton" text="VIEW ALL" textFill="WHITE">
          <font>
             <Font name="Yu Gothic UI Bold" size="12.0" />
          </font>
@@ -99,8 +99,8 @@
          <children>
             <AnchorPane prefHeight="59.0" prefWidth="522.0" style="-fx-background-color: #3f51b5;">
                <children>
-                  <Label layoutX="101.0" layoutY="7.0" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-font-family: Segoe UI Semibold; -fx-text-fill: white;" text="Generate Fee Challen" />
-                  <Button fx:id="Refresh1" layoutX="451.0" layoutY="6.0" mnemonicParsing="false" onAction="#RefreshRecord" prefHeight="49.0" prefWidth="57.0" styleClass="button1" stylesheets="@application.css">
+                  <Label layoutX="101.0" layoutY="7.0" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-font-family: Segoe UI Semibold; -fx-text-fill: white;" text="Generate Fee Challan" />
+                  <Button fx:id="Refresh1" layoutX="451.0" layoutY="6.0" mnemonicParsing="false" onAction="#RefreshRecord1" prefHeight="49.0" prefWidth="57.0" styleClass="button1" stylesheets="@application.css">
                      <graphic>
                         <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="30">
                            <cursor>
@@ -115,7 +115,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor></DatePicker>
             <Text fx:id="duedatelabel" fill="#042954" layoutX="22.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Due Date" wrappingWidth="160.0" />
-            <Button fx:id="generate" layoutX="367.0" layoutY="93.0" mnemonicParsing="false" onAction="#generatefee" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #327c14; -fx-border-radius: 0; -fx-border-color: #18202c;" text="Generate" textFill="WHITE">
+            <Button fx:id="generate" layoutX="367.0" layoutY="93.0" mnemonicParsing="false" onAction="#generatefee" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #327c14; -fx-border-radius: 0; -fx-border-color: #18202c;" styleClass="crudButton" text="GENERATE" textFill="WHITE">
                <font>
                   <Font name="Yu Gothic UI Bold" size="12.0" />
                </font>
@@ -125,5 +125,13 @@
             </Button>
          </children>
       </AnchorPane>
+      <Button fx:id="Delete" layoutX="798.0" layoutY="787.0" mnemonicParsing="false" onAction="#DeleteStudentFeeRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #d50000; -fx-border-radius: 0; -fx-border-color: #18202c;" styleClass="crudButton" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
 </Pane>

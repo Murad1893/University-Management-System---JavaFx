@@ -236,6 +236,10 @@ public class studentdashboardcontroller implements Initializable{
 						ps.setString(1, Base64.getEncoder().encodeToString(newpass2.getText().getBytes()));
 						
 						ps.execute();
+						
+						pass.clear();
+						newpass1.clear();
+						newpass2.clear();
 						}
 					else
 						wplabel.setText("*Wrong New Password");

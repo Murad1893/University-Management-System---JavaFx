@@ -67,7 +67,7 @@
                   </TableView>
                </children>
             </AnchorPane>
-            <Button fx:id="Insert" layoutX="734.0" layoutY="872.0" mnemonicParsing="false" onAction="#InsertStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #3f9ce5; -fx-border-radius: 0; -fx-border-color: #18202c;" text="INSERT" textFill="WHITE">
+            <Button fx:id="Insert" layoutX="734.0" layoutY="872.0" mnemonicParsing="false" onAction="#InsertStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #3f9ce5; -fx-border-radius: 0; -fx-border-color: #18202c;" styleClass="crudButton" text="INSERT" textFill="WHITE">
                <font>
                   <Font name="Yu Gothic UI Bold" size="12.0" />
                </font>
@@ -75,7 +75,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="Delete" layoutX="841.0" layoutY="872.0" mnemonicParsing="false" onAction="#DeleteStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #d50000; -fx-border-radius: 0; -fx-border-color: #18202c;" text="DELETE" textFill="WHITE">
+            <Button fx:id="Delete" layoutX="841.0" layoutY="872.0" mnemonicParsing="false" onAction="#DeleteStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #d50000; -fx-border-radius: 0; -fx-border-color: #18202c;" styleClass="crudButton" text="DELETE" textFill="WHITE">
                <font>
                   <Font name="Yu Gothic UI Bold" size="12.0" />
                </font>
@@ -83,7 +83,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="View" layoutX="952.0" layoutY="872.0" mnemonicParsing="false" onAction="#SearchStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #00838f; -fx-border-radius: 0; -fx-border-color: #18202c;" text="VIEW" textFill="WHITE">
+            <Button fx:id="View" layoutX="952.0" layoutY="872.0" mnemonicParsing="false" onAction="#SearchStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #00838f; -fx-border-radius: 0; -fx-border-color: #18202c;" styleClass="crudButton" text="VIEW" textFill="WHITE">
                <font>
                   <Font name="Yu Gothic UI Bold" size="12.0" />
                </font>
@@ -91,7 +91,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="ViewAll" layoutX="1066.0" layoutY="872.0" mnemonicParsing="false" onAction="#ViewStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #00695c; -fx-border-radius: 0; -fx-border-color: #18202c;" text="VIEW ALL" textFill="WHITE">
+            <Button fx:id="ViewAll" layoutX="1066.0" layoutY="872.0" mnemonicParsing="false" onAction="#ViewStudentRecord" opacity="0.71" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #00695c; -fx-border-radius: 0; -fx-border-color: #18202c;" styleClass="crudButton" text="VIEW ALL" textFill="WHITE">
                <font>
                   <Font name="Yu Gothic UI Bold" size="12.0" />
                </font>

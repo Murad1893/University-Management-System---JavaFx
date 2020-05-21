@@ -1,6 +1,8 @@
 package application;
 
+import java.awt.Desktop;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -42,6 +44,9 @@ public class SidebarController implements Initializable {
     @FXML
     private Button btn6;
     
+    @FXML
+    private Button helpbtn;
+    
     Alert error = new Alert(AlertType.ERROR);
     
     public void StudentAdd(ActionEvent e)
@@ -58,6 +63,15 @@ public class SidebarController implements Initializable {
     public void WarningAdd(ActionEvent e)
     {LoadPane("Warning");}
     
+    public void LoadHelpGuide(ActionEvent e) {
+    	try {
+           Desktop.getDesktop().browse(new URL("http://localhost/help/admin.html").toURI());
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        } catch (URISyntaxException e1) {
+            e1.printStackTrace();
+        }
+    }
     
     public void AdminSignOut(ActionEvent e)
     {

@@ -66,6 +66,9 @@ public class AttendanceController implements Initializable{
 	private TableColumn<Att, String> col_stdid;
 	@FXML
 	private TableColumn<Att, ComboBox<String>> col_presence;
+
+	@FXML
+	private Label course_label;
 	
 	//Button
 
@@ -153,7 +156,8 @@ public class AttendanceController implements Initializable{
 		String course = Course.getValue();
 		int i = 6;
 		String query1 = "Select DISTINCT sectionid from staff_course where StaffID = '" + UACID + "' AND CourseID = '" + course + "'";
-
+		String query2 = "SELECT `CourseName` FROM `course` WHERE `CourseCode` LIKE ?";
+		
 		btns[0] = section1;
 		btns[1] = section2;
 		btns[2] = section3;
@@ -164,7 +168,10 @@ public class AttendanceController implements Initializable{
 		
 		try {
 			ResultSet rs = con.createStatement().executeQuery(query1);
+			PreparedStatement ps = null;
 			
+			ps = con.prepareStatement(query2);
+			ps.setString(1, Course.getValue());
 			
 			while(rs.next()) {
 	
@@ -176,6 +183,13 @@ public class AttendanceController implements Initializable{
 			}
 			
 			i = 6;
+			
+			ps.execute();
+			rs = ps.getResultSet();
+			
+			if(rs.next()) {
+				course_label.setText(rs.getString("coursename"));
+			}
 			
 		} catch (SQLException e1) {
 			// TODO Auto-generated catch block

@@ -1,0 +1,235 @@
+.helpButton{
+	-fx-background-color: transparent;
+}
+
+#loginBackground{
+	-fx-background-color:  #1c2230;
+}
+
+.loginLabel{
+	-fx-font-weight:  bold;
+}
+
+.loginField{
+	-fx-background-color: transparent;
+	-fx-border-color:  white;
+	-fx-border-radius:  10px;
+	-fx-text-fill:  white;
+}
+
+#signInButton{
+	-fx-font-weight:  bold;
+	-fx-background-color:  #008CBA;
+}
+
+#signInButton:hover{
+	-fx-font-size: 16px;
+	-fx-font-weight:  bold;
+	-fx-background-color:  #f6b93b;
+}
+
+#signInButton:focused{
+	-fx-font-size: 16px;
+	-fx-font-weight:  bold;
+	-fx-background-color:  #f6b93b;
+}
+
+.dashboardButton{
+	-fx-font-size: 15px;
+	-fx-background-color: transparent;
+}
+
+.dashboardButton:hover{
+ 	-fx-background-color: #f6b93b;
+    -fx-border-color:#f6b93b;
+    -fx-border-width:3px;
+}
+
+.close:hover{
+	-fx-text-fill: #d50000;
+}
+
+#adminPageHeader{
+	-fx-background-color:  #355c7d;
+}
+
+#adminSidebar{
+	-fx-background-color:  #2e3442;
+}
+
+#terminate{
+	-fx-background-color:  #f44336;
+	-fx-font-weight: bold;
+}
+
+#issue{
+	-fx-background-color:  #008CBA;
+	-fx-font-weight: bold;
+}
+
+#remove{
+	-fx-background-color:   #008CBA;
+	-fx-font-weight: bold;
+}
+
+#terminate:hover{
+	-fx-background-color:  #d50000;
+	-fx-font-weight: bold;
+}
+
+#issue:hover{
+	-fx-background-color:   #3f9ce5;
+	-fx-font-weight: bold;
+}
+
+#remove:hover{
+	-fx-background-color:   #3f9ce5;
+	-fx-font-weight: bold;
+}
+
+.pane{
+	-fx-background-color:  #f1f2f8;
+}
+
+.crudButton{
+	-fx-font-size: 12px;
+	-fx-border-radius: 0;
+	-fx-border-color:  #18202c;
+}
+
+.crudButton:hover{
+	-fx-font-size: 12px;
+	-fx-font-weight: bold;
+	-fx-border-radius: 0;
+	-fx-border-color:  #18202c;
+}
+
+.crudInsert{
+	-fx-background-color:  #3f9ce5;
+}
+
+.crudUpdate{
+	-fx-background-color:  #2e7d32;
+}
+
+.crudDelete{
+	-fx-background-color:  #d50000;
+}
+
+.crudView{
+	-fx-background-color:  #00838f;
+}
+
+.crudViewall{
+	-fx-background-color:  #00695c;
+}
+
+.fill-blue
+{
+    -fx-background-color:blue;
+}
+
+.submit{
+	-fx-background-color:  #4CAF50;
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+}
+
+.submit:hover{
+	-fx-font-size: 16px;
+	-fx-background-color:  #f6b93b;
+	-fx-font-weight: bold;
+}
+
+.upload{
+	-fx-background-color:  #002e62;
+	-fx-font-size: 12px;	
+}
+
+.upload:hover{
+	-fx-font-size: 12px;
+	-fx-background-color:  #f6b93b;
+}
+
+.button1
+{
+	-fx-font-size: 15px;
+	-fx-text-fill: white;
+	-fx-background-color: transparent;
+}
+
+.button1:hover
+{
+	-fx-background-color: #f6b93b;
+    -fx-border-color:#f6b93b;
+    -fx-border-width:3px;
+   
+}
+ 
+  .btn3
+ {
+ 	-fx-background-color:  #3f51b5;
+ }
+ 
+ .btn3:hover
+ {
+ 	-fx-background-color: #f6b93b;
+    -fx-border-color:#f6b93b;
+   
+ }
+
+   .btn4
+ {
+ 	-fx-font-size: 15px;
+ 	-fx-background-color:  #3f51b5;
+ }
+ 
+ .btn4:hover
+ {
+ 	-fx-background-color: #f6b93b;
+    -fx-border-color:#f6b93b;
+   
+ }
+ 
+   .btn5
+ {
+ 	-fx-font-size: 15px;
+ 	-fx-background-color:#4CAF50;
+ }
+ 
+ .btn5:hover
+ {
+ 	-fx-background-color: #f6b93b;
+    -fx-border-color:#f6b93b;
+   
+ }
+ 
+.scroll-pane {
+    -fx-background-color: #ffffff;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color:  #3f51b5;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: white;
+}

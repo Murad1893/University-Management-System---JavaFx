@@ -580,7 +580,7 @@ public class AdminControllerStudent implements Initializable{
 			
 			while(rs1.next()) {
 				if(Integer.parseInt(rs1.getString("Sec_ID")) == sec) {
-					if(Integer.parseInt(rs1.getString("SECCOUNT")) < 1) {
+					if(Integer.parseInt(rs1.getString("SECCOUNT")) < 3) {
 						ps.setString(11, Integer.toString(sec));
 						var = true;
 					}

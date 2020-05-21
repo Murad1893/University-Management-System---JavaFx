@@ -518,8 +518,9 @@ try {
 			while(rs.next()) {
 
 				if(rs.getString("StaffID").equals(s)) {
+					System.out.println(rs.getString("StaffID") + " " + s);
 					i+=1;
-
+					
 					if (i < 10)
 						s = "T" + Integer.toString(Calendar.getInstance().get(Calendar.YEAR)%100) + "000" + Integer.toString(i);
 					else if(i < 100)
@@ -531,7 +532,7 @@ try {
 				}
 
 			}
-
+		
 			ps.setString(1, s);
 			id.setText(s);
 

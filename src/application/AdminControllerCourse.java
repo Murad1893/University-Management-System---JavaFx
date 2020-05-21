@@ -258,8 +258,8 @@ public class AdminControllerCourse implements Initializable{
 
 			ps.execute();
 
-			if(id.getText().equalsIgnoreCase(ccode1.getText()) || id.getText().equalsIgnoreCase(ccode2.getText()) || id.getText().equalsIgnoreCase(ccode3.getText()) ||
-					id.getText().equalsIgnoreCase(ccode4.getText())) {
+			if(code.equalsIgnoreCase(ccode1.getText()) || code.equalsIgnoreCase(ccode2.getText()) || code.equalsIgnoreCase(ccode3.getText()) ||
+					code.equalsIgnoreCase(ccode4.getText())) {
 				error.setContentText("Course cannot be its own prerequisite!");
 				error.showAndWait();
 				return;

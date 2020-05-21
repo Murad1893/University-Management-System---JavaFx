@@ -473,6 +473,8 @@ public class marksController implements  Initializable {
 	
 	public void ViewRecords() {
 		
+		String total = new String();
+		
 		if(table.getItems() != null) {
 			table.getItems().clear();
 		}
@@ -482,12 +484,13 @@ public class marksController implements  Initializable {
 		if(!StringUtils.isNullOrEmpty(section)) {
 		conv_section = section.charAt(0) + section.substring(5,9) + (section.charAt(1) - 64);
 		
-		String query1 = "SELECT s.StdID, m.Marks_Gained FROM student s, marks m where s.StdID = m.StudentID and s.Sec_ID = '" + conv_section + "' and m.CourseID = '" + Course.getValue() +"' and m.Type = '" + type + "'";
+		String query1 = "SELECT s.StdID, m.Marks_Gained, m.Total_Marks FROM student s, marks m where s.StdID = m.StudentID and s.Sec_ID = '" + conv_section + "' and m.CourseID = '" + Course.getValue() +"' and m.Type = '" + type + "'";
 		
 		try {
 			ResultSet rs = con.createStatement().executeQuery(query1);
 			while(rs.next()) {
 				marks.add(new StudentMarks(rs.getString("s.StdID"), rs.getString("m.Marks_Gained")));	
+				total = rs.getString("m.Total_Marks");
 			}
 			
 		} catch (Exception e) {
@@ -504,6 +507,7 @@ public class marksController implements  Initializable {
 		
 		table.setEditable(true);
 		obtmarks.setCellFactory(TextFieldTableCell.forTableColumn());
+		total_marks.setText(total);
 		}
 		else {
 			error.setContentText("Section not selected yet!");

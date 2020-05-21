@@ -116,25 +116,25 @@
                         </Button>
                      </children>
                   </AnchorPane>
-                  <Text fx:id="hnolabel" fill="#042954" layoutX="31.0" layoutY="1563.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text="Home No (optional)" wrappingWidth="201.9830722808838" />
+                  <Text fx:id="hnolabel" fill="#042954" layoutX="31.0" layoutY="1563.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Home No (optional)" wrappingWidth="201.9830722808838" />
                   <TextField fx:id="hno" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="26.0" layoutY="1575.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="+92xxx-xxx-xxxx" style="-fx-border-color: none; -fx-background-color: transparent;">
                      <opaqueInsets>
                         <Insets right="3.0" />
                      </opaqueInsets>
                   </TextField>
-                  <Text fx:id="altnolabel" fill="#042954" layoutX="28.0" layoutY="1640.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text="Alternative No (optional)" wrappingWidth="167.9830722808838" />
+                  <Text fx:id="altnolabel" fill="#042954" layoutX="28.0" layoutY="1640.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Alternative No (optional)" wrappingWidth="167.9830722808838" />
                   <TextField fx:id="altno" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="26.0" layoutY="1654.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="+92xxx-xxx-xxxx" style="-fx-border-color: none; -fx-background-color: transparent;">
                      <opaqueInsets>
                         <Insets right="3.0" />
                      </opaqueInsets>
                   </TextField>
-                  <Text fx:id="emailwlabel" fill="#042954" layoutX="32.0" layoutY="1243.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text="Email (Work)" wrappingWidth="118.98307228088379" />
+                  <Text fx:id="emailwlabel" fill="#042954" layoutX="32.0" layoutY="1243.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Email (Work)" wrappingWidth="118.98307228088379" />
                   <TextField fx:id="emailw" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="32.0" layoutY="1253.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="----------@gmail.com" style="-fx-border-color: none; -fx-border-radius: none; -fx-border-bottom: none; -fx-background-color: transparent;">
                      <opaqueInsets>
                         <Insets right="3.0" />
                      </opaqueInsets>
                   </TextField>
-                  <Text fx:id="salarylabel" fill="#042954" layoutX="32.0" layoutY="1033.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text="Salary" wrappingWidth="182.9831027984619" />
+                  <Text fx:id="salarylabel" fill="#042954" layoutX="32.0" layoutY="1033.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Salary" wrappingWidth="182.9831027984619" />
                   <TextField fx:id="salary" blendMode="DARKEN" centerShape="false" depthTest="ENABLE" layoutX="32.0" layoutY="1047.0" pickOnBounds="false" prefHeight="26.0" prefWidth="374.0" promptText="Qualification" style="-fx-border-color: none; -fx-border-radius: none; -fx-border-bottom: none; -fx-background-color: transparent;">
                      <opaqueInsets>
                         <Insets right="3.0" />
